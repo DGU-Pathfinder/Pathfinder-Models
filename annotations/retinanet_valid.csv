@@ -1,4 +1,3 @@
-image_name,x_min,y_min,x_max,y_max,class_name
 ./data/data_contrast_before/Image/Others/6054-001906-R1-1.jpg,2079,166,2193,194,Slag
 ./data/data_contrast_before/Image/Others/6054-001906-R1-1.jpg,1315,202,1412,224,Slag
 ./data/data_contrast_before/Image/Others/6054-002474-A1-1.jpg,1753,208,1803,259,Porosity
