@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/train.py", line 53, in <module>
+    train_dataset=RT_Dataset(train_df,image_dir,transforms=get_transform(train=True))
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/dataset.py", line 14, in __init__
+    self.classes=[_,'Others','Porosity','Slag']
+NameError: name '_' is not defined

@@ -1,0 +1,1456 @@
+2023-11-17 11:31:07,238 INFO    StreamThr :1025177 [internal.py:wandb_internal():86] W&B internal server running at pid: 1025177, started at: 2023-11-17 11:31:07.237405
+2023-11-17 11:31:07,241 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status
+2023-11-17 11:31:07,244 INFO    WriterThread:1025177 [datastore.py:open_for_write():85] open: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/run-ukrzwr0n.wandb
+2023-11-17 11:31:07,248 DEBUG   SenderThread:1025177 [sender.py:send():379] send: header
+2023-11-17 11:31:07,256 DEBUG   SenderThread:1025177 [sender.py:send():379] send: run
+2023-11-17 11:31:07,865 INFO    SenderThread:1025177 [dir_watcher.py:__init__():211] watching files in: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files
+2023-11-17 11:31:07,865 INFO    SenderThread:1025177 [sender.py:_start_run_threads():1122] run started: ukrzwr0n with start time 1700220667.237419
+2023-11-17 11:31:07,865 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:07,866 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:07,881 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: check_version
+2023-11-17 11:31:07,882 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: check_version
+2023-11-17 11:31:08,024 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: run_start
+2023-11-17 11:31:08,040 DEBUG   HandlerThread:1025177 [system_info.py:__init__():31] System info init
+2023-11-17 11:31:08,041 DEBUG   HandlerThread:1025177 [system_info.py:__init__():46] System info init done
+2023-11-17 11:31:08,041 INFO    HandlerThread:1025177 [system_monitor.py:start():181] Starting system monitor
+2023-11-17 11:31:08,041 INFO    SystemMonitor:1025177 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-11-17 11:31:08,043 INFO    HandlerThread:1025177 [system_monitor.py:probe():201] Collecting system info
+2023-11-17 11:31:08,044 INFO    SystemMonitor:1025177 [interfaces.py:start():190] Started cpu monitoring
+2023-11-17 11:31:08,045 INFO    SystemMonitor:1025177 [interfaces.py:start():190] Started disk monitoring
+2023-11-17 11:31:08,047 INFO    SystemMonitor:1025177 [interfaces.py:start():190] Started gpu monitoring
+2023-11-17 11:31:08,049 INFO    SystemMonitor:1025177 [interfaces.py:start():190] Started memory monitoring
+2023-11-17 11:31:08,050 INFO    SystemMonitor:1025177 [interfaces.py:start():190] Started network monitoring
+2023-11-17 11:31:08,087 DEBUG   HandlerThread:1025177 [system_info.py:probe():195] Probing system
+2023-11-17 11:31:08,091 DEBUG   HandlerThread:1025177 [system_info.py:_probe_git():180] Probing git
+2023-11-17 11:31:08,108 DEBUG   HandlerThread:1025177 [system_info.py:_probe_git():188] Probing git done
+2023-11-17 11:31:08,108 DEBUG   HandlerThread:1025177 [system_info.py:probe():240] Probing system done
+2023-11-17 11:31:08,108 DEBUG   HandlerThread:1025177 [system_monitor.py:probe():210] {'os': 'Linux-5.10.0-1055-oem-x86_64-with-glibc2.27', 'python': '3.10.12', 'heartbeatAt': '2023-11-17T11:31:08.087956', 'startedAt': '2023-11-17T11:31:07.223624', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/train.py', 'codePath': 'faster-rcnn/train.py', 'git': {'remote': 'https://github.com/DGU-Pathfinder/Pathfinder-Models.git', 'commit': '6e3002b17590152a5448306991c30f2865839b82'}, 'email': 'junghyekim01@gmail.com', 'root': '/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai', 'host': '3068b64872e5', 'username': 'irteam', 'executable': '/home/irteam/anaconda3/envs/pixt/bin/python', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 1585.129541666667, 'min': 1000.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 3156.437, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.162, 'min': 1000.0, 'max': 3500.0}, {'current': 3158.0, 'min': 1000.0, 'max': 3500.0}, {'current': 1001.402, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.0, 'min': 1000.0, 'max': 3500.0}, {'current': 3094.878, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.948, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.792, 'min': 1000.0, 'max': 3500.0}, {'current': 1001.264, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.371, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.136, 'min': 1000.0, 'max': 3500.0}, {'current': 1324.165, 'min': 1000.0, 'max': 3500.0}, {'current': 3168.696, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.223, 'min': 1000.0, 'max': 3500.0}, {'current': 3002.259, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.206, 'min': 1000.0, 'max': 3500.0}, {'current': 998.315, 'min': 1000.0, 'max': 3500.0}, {'current': 3174.782, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.208, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.239, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.122, 'min': 1000.0, 'max': 3500.0}, {'current': 999.63, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.1, 'min': 1000.0, 'max': 3500.0}, {'current': 1305.795, 'min': 1000.0, 'max': 3500.0}], 'disk': {'total': 1838.7526741027832, 'used': 205.5642433166504}, 'gpu': 'Quadro RTX 5000', 'gpu_count': 1, 'gpu_devices': [{'name': 'Quadro RTX 5000', 'memory_total': 17179869184}], 'memory': {'total': 30.992286682128906}}
+2023-11-17 11:31:08,108 INFO    HandlerThread:1025177 [system_monitor.py:probe():211] Finished collecting system info
+2023-11-17 11:31:08,109 INFO    HandlerThread:1025177 [system_monitor.py:probe():214] Publishing system info
+2023-11-17 11:31:08,109 DEBUG   HandlerThread:1025177 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-11-17 11:31:08,111 DEBUG   HandlerThread:1025177 [system_info.py:_save_pip():67] Saving pip packages done
+2023-11-17 11:31:08,111 DEBUG   HandlerThread:1025177 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-11-17 11:31:08,639 DEBUG   HandlerThread:1025177 [system_info.py:_save_conda():86] Saving conda packages done
+2023-11-17 11:31:08,642 INFO    HandlerThread:1025177 [system_monitor.py:probe():216] Finished publishing system info
+2023-11-17 11:31:08,654 DEBUG   SenderThread:1025177 [sender.py:send():379] send: files
+2023-11-17 11:31:08,654 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-metadata.json with policy now
+2023-11-17 11:31:08,662 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-17 11:31:08,663 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: stop_status
+2023-11-17 11:31:08,872 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/requirements.txt
+2023-11-17 11:31:08,872 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/conda-environment.yaml
+2023-11-17 11:31:08,873 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-metadata.json
+2023-11-17 11:31:08,874 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:08,997 DEBUG   SenderThread:1025177 [sender.py:send():379] send: telemetry
+2023-11-17 11:31:09,347 INFO    wandb-upload_0:1025177 [upload_job.py:push():131] Uploaded file /tmp/tmp9gvlicnhwandb/fankw6o1-wandb-metadata.json
+2023-11-17 11:31:11,075 DEBUG   SenderThread:1025177 [sender.py:send():379] send: telemetry
+2023-11-17 11:31:13,076 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:31:13,452 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:13,455 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:13,456 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:13,459 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:13,875 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:13,877 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:14,098 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:14,100 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:14,100 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:14,102 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:14,581 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:14,582 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:14,583 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:14,584 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:14,877 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:15,077 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:15,078 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:15,079 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:15,081 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:15,581 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:15,583 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:15,583 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:15,587 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:15,878 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:15,879 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:16,090 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:16,091 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:16,092 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:16,094 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:16,555 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:16,556 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:16,557 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:16,559 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:16,880 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:17,066 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:17,067 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:17,068 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:17,069 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:17,532 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:17,533 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:17,534 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:17,535 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:17,881 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:18,016 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:18,018 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:18,018 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:18,021 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:18,537 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:18,539 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:18,539 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:18,540 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:31:18,542 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:18,882 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:19,029 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:19,030 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:19,030 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:19,032 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:19,518 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:19,519 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:19,520 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:19,521 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:19,884 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:19,885 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:19,987 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:19,988 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:19,988 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:19,989 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:20,460 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:20,462 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:20,462 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:20,465 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:20,886 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:20,943 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:20,945 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:20,945 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:20,947 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:21,433 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:21,434 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:21,435 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:21,437 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:21,887 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:21,919 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:21,920 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:21,921 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:21,923 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:22,410 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:22,412 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:22,412 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:22,413 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:22,879 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:22,880 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:22,880 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:22,882 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:22,888 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:23,377 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:23,378 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:23,379 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:23,380 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:23,635 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:31:23,663 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-17 11:31:23,664 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: stop_status
+2023-11-17 11:31:23,881 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:23,889 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:23,906 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:23,906 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:23,908 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:24,356 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:24,358 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:24,358 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:24,360 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:24,832 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:24,833 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:24,834 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:24,835 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:24,890 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:25,300 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:25,301 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:25,302 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:25,304 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:25,792 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:25,793 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:25,794 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:25,795 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:25,891 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:25,892 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:26,281 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:26,283 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:26,283 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:26,285 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:26,764 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:26,766 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:26,766 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:26,767 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:26,892 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:27,248 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:27,248 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:27,249 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:27,250 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:27,722 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:27,723 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:27,724 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:27,726 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:27,894 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:28,214 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:28,215 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:28,216 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:28,217 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:28,714 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:28,715 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:28,716 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:28,716 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:31:28,717 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:28,895 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:29,213 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:29,215 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:29,215 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:29,217 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:29,717 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:29,719 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:29,719 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:29,720 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:29,896 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:29,896 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:30,178 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:30,179 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:30,179 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:30,180 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:30,670 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:30,671 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:30,672 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:30,673 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:30,897 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:31,203 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:31,205 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:31,205 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:31,206 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:31,695 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:31,696 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:31,696 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:31,697 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:31,899 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:32,197 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:32,198 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:32,199 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:32,202 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:32,660 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:32,660 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:32,661 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:32,662 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:32,900 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:33,136 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:33,137 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:33,138 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:33,139 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:33,645 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:33,646 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:33,647 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:33,648 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:33,901 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:34,121 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:34,123 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:34,123 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:34,123 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:31:34,124 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:34,610 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:34,611 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:34,611 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:34,614 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:34,902 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:35,070 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:35,071 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:35,071 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:35,072 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:35,555 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:35,556 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:35,557 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:35,558 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:35,903 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:35,904 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:36,038 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:36,040 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:36,040 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:36,041 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:36,524 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:36,525 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:36,526 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:36,527 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:36,904 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:37,008 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:37,010 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:37,010 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:37,012 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:37,486 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:37,487 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:37,487 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:37,489 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:37,906 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:37,984 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:37,985 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:37,986 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:37,987 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:38,487 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:38,489 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:38,489 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:38,490 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:38,731 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-17 11:31:38,732 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: stop_status
+2023-11-17 11:31:38,907 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:38,975 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:39,027 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:39,028 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:39,031 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:39,465 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:39,466 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:39,472 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:31:39,747 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:39,748 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:39,911 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/config.yaml
+2023-11-17 11:31:39,911 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:39,912 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:39,938 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:39,939 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:39,940 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:39,941 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:40,451 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:40,452 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:40,452 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:40,454 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:40,912 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:40,929 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:40,930 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:40,931 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:40,932 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:41,424 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:41,425 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:41,425 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:41,429 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:41,892 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:41,893 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:41,894 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:41,895 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:41,914 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:42,375 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:42,376 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:42,377 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:42,378 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:42,861 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:42,862 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:42,863 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:42,864 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:42,915 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:43,338 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:43,339 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:43,340 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:43,341 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:43,813 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:43,814 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:43,814 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:43,816 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:43,921 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:43,921 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:44,281 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:44,283 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:44,283 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:44,285 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:44,768 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:44,769 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:44,770 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:44,770 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:31:44,771 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:44,922 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:45,250 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:45,252 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:45,252 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:45,254 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:45,738 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:45,739 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:45,740 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:45,741 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:45,924 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:46,229 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:46,230 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:46,231 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:46,232 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:46,692 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:46,693 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:46,694 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:46,695 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:46,926 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:47,201 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:47,203 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:47,203 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:47,205 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:47,717 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:47,719 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:47,719 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:47,721 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:47,928 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:48,220 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:48,222 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:48,222 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:48,224 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:48,704 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:48,705 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:48,705 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:48,707 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:48,930 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:49,196 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:49,197 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:49,198 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:49,199 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:49,700 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:49,701 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:49,702 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:49,703 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:49,935 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:49,936 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:50,182 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:50,184 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:50,184 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:50,185 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:31:50,186 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:50,660 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:50,661 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:50,661 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:50,662 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:50,937 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:51,129 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:51,130 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:51,131 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:51,133 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:51,619 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:51,620 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:51,621 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:51,622 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:51,939 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:52,111 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:52,112 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:52,112 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:52,114 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:52,588 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:52,589 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:52,590 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:52,591 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:52,944 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:53,072 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:53,074 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:53,074 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:53,075 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:53,543 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:53,545 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:53,545 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:53,549 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:53,799 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-17 11:31:53,800 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: stop_status
+2023-11-17 11:31:53,946 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:53,947 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:54,040 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:54,062 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:54,062 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:54,064 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:54,513 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:54,514 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:54,514 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:54,516 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:54,947 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:55,003 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:55,005 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:55,005 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:55,007 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:55,468 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:55,469 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:55,469 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:55,470 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:31:55,471 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:55,951 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:55,952 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:55,953 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:55,953 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:55,957 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:56,437 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:56,438 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:56,439 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:56,440 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:56,928 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:56,929 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:56,929 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:56,931 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:56,953 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:57,417 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:57,418 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:57,419 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:57,421 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:57,899 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:57,901 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:57,901 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:57,903 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:57,955 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:58,412 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:58,414 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:58,414 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:58,417 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:58,903 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:58,904 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:58,905 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:58,907 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:58,956 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:31:59,399 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:59,400 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:59,401 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:59,402 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:59,855 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:31:59,857 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:31:59,857 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:31:59,859 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:31:59,961 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:31:59,962 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:00,355 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:00,357 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:00,357 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:00,359 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:00,848 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:00,850 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:00,850 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:00,852 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:00,854 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:00,962 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:01,326 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:01,327 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:01,328 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:01,330 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:01,800 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:01,801 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:01,802 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:01,803 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:01,964 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:02,275 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:02,276 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:02,277 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:02,279 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:02,780 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:02,781 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:02,782 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:02,784 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:02,968 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:03,270 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:03,271 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:03,272 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:03,275 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:03,756 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:03,758 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:03,758 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:03,759 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:03,972 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:03,973 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:04,218 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:04,219 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:04,219 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:04,221 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:04,724 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:04,725 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:04,726 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:04,727 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:04,973 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:05,232 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:05,233 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:05,234 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:05,235 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:05,718 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:05,720 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:05,720 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:05,722 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:05,976 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:06,203 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:06,204 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:06,205 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:06,205 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:06,206 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:06,675 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:06,677 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:06,677 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:06,679 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:06,977 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:07,175 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:07,176 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:07,176 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:07,178 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:07,683 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:07,684 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:07,685 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:07,687 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:07,985 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:07,985 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:08,051 DEBUG   SystemMonitor:1025177 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-11-17 11:32:08,053 DEBUG   SenderThread:1025177 [sender.py:send():379] send: stats
+2023-11-17 11:32:08,160 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:08,162 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:08,162 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:08,164 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:08,635 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:08,637 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:08,637 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:08,638 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:08,876 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-17 11:32:08,877 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: stop_status
+2023-11-17 11:32:08,986 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:09,110 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:09,112 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:09,112 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:09,114 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:09,607 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:09,609 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:09,609 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:09,611 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:09,988 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:10,092 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:10,093 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:10,093 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:10,095 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:10,567 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:10,569 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:10,570 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:10,571 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:10,990 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:11,038 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:11,039 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:11,040 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:11,041 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:11,527 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:11,528 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:11,529 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:11,529 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:11,531 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:11,991 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:12,033 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:12,034 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:12,035 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:12,036 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:12,517 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:12,519 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:12,519 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:12,521 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:12,989 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:12,990 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:12,991 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:12,992 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:12,993 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:13,502 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:13,503 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:13,504 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:13,506 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:13,997 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:13,999 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:13,999 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:14,000 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:14,001 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:14,001 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:14,510 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:14,511 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:14,512 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:14,513 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:14,967 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:14,968 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:14,969 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:14,970 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:15,001 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:15,462 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:15,463 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:15,464 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:15,466 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:15,979 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:15,980 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:15,980 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:15,982 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:16,003 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:16,488 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:16,490 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:16,490 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:16,492 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:16,968 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:16,969 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:16,969 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:16,969 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:16,970 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:17,003 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:17,445 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:17,447 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:17,447 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:17,449 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:17,956 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:17,957 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:17,958 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:17,959 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:18,008 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:18,009 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:18,456 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:18,458 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:18,458 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:18,460 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:18,952 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:18,954 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:18,954 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:18,955 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:19,009 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:19,439 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:19,441 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:19,441 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:19,443 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:19,971 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:19,972 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:19,973 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:19,974 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:20,012 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:20,480 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:20,482 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:20,482 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:20,483 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:20,976 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:20,977 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:20,978 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:20,979 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:21,013 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:21,443 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:21,445 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:21,445 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:21,447 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:21,956 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:21,957 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:21,958 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:21,959 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:22,015 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:22,212 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:22,482 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:22,484 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:22,484 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:22,486 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:22,962 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:22,964 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:22,964 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:22,966 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:23,017 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:23,438 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:23,440 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:23,440 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:23,442 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:23,874 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-17 11:32:23,875 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: stop_status
+2023-11-17 11:32:23,913 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:24,023 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:24,023 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:24,173 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:24,174 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:24,175 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:24,409 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:24,411 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:24,411 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:24,412 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:24,883 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:24,885 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:24,885 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:24,887 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:25,024 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:25,391 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:25,393 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:25,393 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:25,395 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:25,855 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:25,857 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:25,857 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:25,858 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:26,027 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:26,332 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:26,334 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:26,334 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:26,338 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:26,839 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:26,841 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:26,841 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:26,843 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:27,028 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:27,330 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:27,332 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:27,332 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:27,333 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:27,334 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:27,836 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:27,838 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:27,838 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:27,840 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:28,034 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:28,035 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:28,303 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:28,304 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:28,305 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:28,306 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:28,780 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:28,781 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:28,782 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:28,783 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:29,035 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:29,284 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:29,286 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:29,286 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:29,287 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:29,779 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:29,780 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:29,780 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:29,782 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:30,037 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:30,287 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:30,288 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:30,289 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:30,290 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:30,752 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:30,753 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:30,753 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:30,754 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:31,038 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:31,226 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:31,228 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:31,228 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:31,229 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:31,723 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:31,724 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:31,724 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:31,725 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:32,044 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:32,044 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:32,222 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:32,223 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:32,223 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:32,224 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:32,708 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:32,709 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:32,710 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:32,710 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:32,711 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:33,046 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:33,195 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:33,196 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:33,197 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:33,198 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:33,695 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:33,696 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:33,697 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:33,698 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:34,048 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:34,213 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:34,215 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:34,215 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:34,217 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:34,695 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:34,696 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:34,697 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:34,699 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:35,050 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:35,175 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:35,176 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:35,176 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:35,177 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:35,647 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:35,648 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:35,649 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:35,650 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:36,052 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:36,139 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:36,140 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:36,141 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:36,142 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:36,636 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:36,637 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:36,638 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:36,641 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:37,053 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:37,127 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:37,129 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:37,129 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:37,131 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:37,618 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:37,619 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:37,620 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:37,621 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:38,060 DEBUG   SenderThread:1025177 [sender.py:send():379] send: stats
+2023-11-17 11:32:38,061 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:38,062 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:38,063 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:38,092 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:38,094 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:38,094 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:38,095 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:38,603 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:38,604 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:38,605 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:38,606 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:38,874 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-17 11:32:38,875 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: stop_status
+2023-11-17 11:32:39,063 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:39,119 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:39,145 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:39,146 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:39,147 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:39,593 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:39,594 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:39,595 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:39,596 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:40,065 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:40,066 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:40,067 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:40,067 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:40,068 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:40,548 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:40,549 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:40,549 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:40,551 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:41,028 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:41,029 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:41,030 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:41,031 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:41,066 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:41,514 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:41,516 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:41,517 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:41,518 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:41,998 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:41,999 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:42,000 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:42,001 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:42,067 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:42,067 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:42,475 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:42,476 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:42,476 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:42,478 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:42,985 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:42,986 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:42,986 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:42,988 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:43,068 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:43,469 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:43,470 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:43,471 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:43,471 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:43,473 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:43,977 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:43,978 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:43,979 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:43,981 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:44,070 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:44,442 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:44,443 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:44,444 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:44,445 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:44,965 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:44,966 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:44,966 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:44,968 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:45,072 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:45,443 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:45,444 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:45,445 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:45,446 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:45,948 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:45,949 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:45,950 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:45,951 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:46,073 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:46,414 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:46,415 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:46,416 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:46,418 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:46,890 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:46,891 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:46,892 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:46,895 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:47,074 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:47,397 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:47,398 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:47,399 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:47,400 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:47,891 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:47,892 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:47,893 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:47,894 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:48,079 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:48,080 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:48,398 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:48,400 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:48,400 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:48,402 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:48,863 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:48,863 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:48,864 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:48,864 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:48,866 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:49,080 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:49,353 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:49,355 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:49,355 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:49,357 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:49,855 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:49,857 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:49,858 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:49,859 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:50,083 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:50,335 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:50,337 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:50,337 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:50,339 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:50,811 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:50,812 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:50,812 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:50,814 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:51,084 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:51,298 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:51,299 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:51,299 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:51,301 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:51,797 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:51,798 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:51,798 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:51,800 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:52,090 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:52,091 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:52,286 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:52,287 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:52,288 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:52,290 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:52,773 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:52,774 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:52,774 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:52,775 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:53,092 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:53,253 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:53,254 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:53,254 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:53,256 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:53,773 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:53,775 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:53,775 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:53,777 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:54,021 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-17 11:32:54,022 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:54,022 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: stop_status
+2023-11-17 11:32:54,094 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:54,275 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:54,306 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:54,307 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:54,309 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:54,760 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:54,761 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:54,761 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:54,762 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:55,095 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:55,236 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:55,238 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:55,238 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:55,240 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:55,737 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:55,738 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:55,739 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:55,741 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:56,096 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:56,228 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:56,230 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:56,230 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:56,232 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:56,739 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:56,741 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:56,741 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:56,743 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:57,097 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:57,206 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:57,208 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:57,208 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:57,210 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:57,682 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:57,683 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:57,684 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:57,685 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:58,103 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:32:58,104 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:58,181 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:58,182 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:58,183 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:58,184 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:58,696 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:58,697 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:58,698 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:58,699 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:59,105 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:32:59,182 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:59,184 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:59,184 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:59,185 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:32:59,186 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:32:59,663 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:32:59,665 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:32:59,665 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:32:59,666 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:00,106 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:00,135 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:00,137 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:00,137 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:00,139 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:00,625 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:00,626 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:00,627 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:00,629 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:01,107 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:01,116 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:01,117 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:01,118 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:01,119 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:01,603 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:01,605 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:01,605 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:01,607 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:02,086 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:02,087 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:02,088 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:02,089 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:02,108 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:33:02,109 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:02,566 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:02,568 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:02,568 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:02,570 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:03,077 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:03,079 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:03,079 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:03,081 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:03,110 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:03,571 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:03,572 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:03,573 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:03,574 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:04,051 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:04,052 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:04,052 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:04,053 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:04,112 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:04,507 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:04,508 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:04,509 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:04,509 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:33:04,511 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:05,007 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:05,009 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:05,009 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:05,011 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:05,113 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:05,502 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:05,503 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:05,504 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:05,505 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:05,977 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:05,978 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:05,979 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:05,980 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:06,116 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:06,452 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:06,453 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:06,454 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:06,455 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:06,934 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:06,935 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:06,935 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:06,937 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:07,117 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:07,419 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:07,420 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:07,420 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:07,422 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:07,903 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:07,904 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:07,905 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:07,906 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:08,061 DEBUG   SenderThread:1025177 [sender.py:send():379] send: stats
+2023-11-17 11:33:08,124 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:33:08,124 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:08,386 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:08,387 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:08,387 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:08,389 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:08,848 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:08,849 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:08,850 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:08,851 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:09,106 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-17 11:33:09,107 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: stop_status
+2023-11-17 11:33:09,125 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:09,362 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:09,370 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:09,371 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:09,373 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:09,864 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:09,865 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:09,866 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:09,866 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:33:09,867 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:10,128 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:10,342 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:10,343 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:10,344 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:10,345 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:10,823 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:10,824 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:10,824 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:10,825 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:11,129 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:11,310 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:11,311 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:11,312 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:11,313 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:11,798 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:11,799 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:11,800 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:11,801 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:12,135 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:33:12,136 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:12,274 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:12,275 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:12,275 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:12,276 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:12,754 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:12,754 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:12,755 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:12,756 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:13,137 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:13,236 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:13,238 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:13,238 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:13,240 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:13,728 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:13,729 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:13,729 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:13,731 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:14,139 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:14,214 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:14,215 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:14,216 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:14,217 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:14,700 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:14,701 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:14,701 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:14,703 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:15,140 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:15,159 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:15,160 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:15,161 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:15,161 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:33:15,163 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:15,669 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:15,670 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:15,671 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:15,673 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:16,146 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:33:16,146 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:16,178 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:16,179 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:16,179 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:16,181 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:16,657 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:16,657 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:16,658 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:16,660 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:17,132 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:17,133 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:17,133 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:17,134 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:17,146 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:17,605 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:17,606 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:17,607 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:17,611 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:18,091 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:18,093 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:18,093 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:18,095 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:18,148 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:18,580 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:18,581 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:18,582 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:18,583 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:19,065 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:19,065 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:19,066 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:19,068 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:19,149 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:19,550 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:19,551 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:19,551 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:19,553 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:20,022 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:20,023 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:20,023 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:20,025 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:20,151 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:20,518 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:20,519 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:20,520 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:20,520 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:33:20,521 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:21,022 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:21,023 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:21,024 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:21,025 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:21,152 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:21,503 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:21,504 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:21,505 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:21,506 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:21,983 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:21,984 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:21,985 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:21,986 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:22,157 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:33:22,158 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:22,461 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:22,463 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:22,463 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:22,464 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:22,952 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: partial_history
+2023-11-17 11:33:22,954 DEBUG   SenderThread:1025177 [sender.py:send():379] send: history
+2023-11-17 11:33:22,954 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: summary_record
+2023-11-17 11:33:22,956 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:23,158 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:23,255 DEBUG   SenderThread:1025177 [sender.py:send():379] send: exit
+2023-11-17 11:33:23,255 INFO    SenderThread:1025177 [sender.py:send_exit():584] handling exit code: 1
+2023-11-17 11:33:23,255 INFO    SenderThread:1025177 [sender.py:send_exit():586] handling runtime: 135
+2023-11-17 11:33:23,257 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:23,257 INFO    SenderThread:1025177 [sender.py:send_exit():592] send defer
+2023-11-17 11:33:23,257 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:23,257 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 0
+2023-11-17 11:33:23,258 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:23,258 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-11-17 11:33:23,258 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 1
+2023-11-17 11:33:23,258 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:23,258 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 1
+2023-11-17 11:33:23,259 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:23,259 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-11-17 11:33:23,259 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 2
+2023-11-17 11:33:23,259 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:23,259 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 2
+2023-11-17 11:33:23,259 INFO    HandlerThread:1025177 [system_monitor.py:finish():190] Stopping system monitor
+2023-11-17 11:33:23,260 DEBUG   SystemMonitor:1025177 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-11-17 11:33:23,261 INFO    HandlerThread:1025177 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-17 11:33:23,261 DEBUG   SystemMonitor:1025177 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-11-17 11:33:23,261 INFO    HandlerThread:1025177 [interfaces.py:finish():202] Joined disk monitor
+2023-11-17 11:33:23,293 INFO    HandlerThread:1025177 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-17 11:33:23,294 INFO    HandlerThread:1025177 [interfaces.py:finish():202] Joined memory monitor
+2023-11-17 11:33:23,294 INFO    HandlerThread:1025177 [interfaces.py:finish():202] Joined network monitor
+2023-11-17 11:33:23,295 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:23,295 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-11-17 11:33:23,295 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 3
+2023-11-17 11:33:23,295 DEBUG   SenderThread:1025177 [sender.py:send():379] send: stats
+2023-11-17 11:33:23,295 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:23,296 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 3
+2023-11-17 11:33:23,297 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:23,297 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-11-17 11:33:23,297 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 4
+2023-11-17 11:33:23,297 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:23,298 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 4
+2023-11-17 11:33:23,298 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:23,299 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-11-17 11:33:23,299 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 5
+2023-11-17 11:33:23,299 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:23,299 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 5
+2023-11-17 11:33:23,300 DEBUG   SenderThread:1025177 [sender.py:send():379] send: summary
+2023-11-17 11:33:23,301 INFO    SenderThread:1025177 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-17 11:33:23,302 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:23,302 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-11-17 11:33:23,302 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 6
+2023-11-17 11:33:23,302 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:23,302 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 6
+2023-11-17 11:33:23,303 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:23,303 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-11-17 11:33:23,303 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 7
+2023-11-17 11:33:23,303 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: status_report
+2023-11-17 11:33:23,303 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:23,303 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 7
+2023-11-17 11:33:23,304 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:23,304 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-11-17 11:33:24,161 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:24,256 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-17 11:33:25,240 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 8
+2023-11-17 11:33:25,240 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: poll_exit
+2023-11-17 11:33:25,241 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:25,241 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 8
+2023-11-17 11:33:25,241 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:25,242 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-11-17 11:33:25,242 INFO    SenderThread:1025177 [job_builder.py:build():280] Attempting to build job artifact
+2023-11-17 11:33:25,243 INFO    SenderThread:1025177 [job_builder.py:_get_source_type():389] is repo sourced job
+2023-11-17 11:33:25,247 INFO    SenderThread:1025177 [job_builder.py:build():363] adding wandb-job metadata file
+2023-11-17 11:33:25,257 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-17 11:33:25,277 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 9
+2023-11-17 11:33:25,278 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: poll_exit
+2023-11-17 11:33:25,278 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:25,279 DEBUG   SenderThread:1025177 [sender.py:send():379] send: artifact
+2023-11-17 11:33:25,279 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 9
+2023-11-17 11:33:26,164 INFO    Thread-12 :1025177 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:33:26,259 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-17 11:33:26,394 INFO    SenderThread:1025177 [sender.py:send_artifact():1476] sent artifact job-https___github.com_DGU-Pathfinder_Pathfinder-Models.git_faster-rcnn_train.py - {'id': 'QXJ0aWZhY3Q6NjQxNDExMTYz', 'digest': 'b16a8124852d57553cf4c8c586f8614b', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_DGU-Pathfinder_Pathfinder-Models.git_faster-rcnn_train.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_DGU-Pathfinder_Pathfinder-Models.git_faster-rcnn_train.py', 'alias': 'v1'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNjYzMDM5Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQxNDExMTYz', 'versionIndex': 1}}, 'version': 'v1'}
+2023-11-17 11:33:26,394 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:26,394 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-11-17 11:33:26,394 INFO    SenderThread:1025177 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-11-17 11:33:27,165 INFO    SenderThread:1025177 [dir_watcher.py:finish():389] scan: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files
+2023-11-17 11:33:27,166 INFO    SenderThread:1025177 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/config.yaml config.yaml
+2023-11-17 11:33:27,167 INFO    SenderThread:1025177 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json wandb-summary.json
+2023-11-17 11:33:27,173 INFO    SenderThread:1025177 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/requirements.txt requirements.txt
+2023-11-17 11:33:27,179 INFO    SenderThread:1025177 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/conda-environment.yaml conda-environment.yaml
+2023-11-17 11:33:27,181 INFO    SenderThread:1025177 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-metadata.json wandb-metadata.json
+2023-11-17 11:33:27,187 INFO    SenderThread:1025177 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log output.log
+2023-11-17 11:33:27,188 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 10
+2023-11-17 11:33:27,189 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: poll_exit
+2023-11-17 11:33:27,195 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:27,195 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 10
+2023-11-17 11:33:27,196 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:27,197 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-11-17 11:33:27,197 INFO    SenderThread:1025177 [file_pusher.py:finish():159] shutting down file pusher
+2023-11-17 11:33:27,260 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-17 11:33:27,261 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: poll_exit
+2023-11-17 11:33:27,679 INFO    wandb-upload_1:1025177 [upload_job.py:push():131] Uploaded file /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/wandb-summary.json
+2023-11-17 11:33:27,999 INFO    wandb-upload_0:1025177 [upload_job.py:push():131] Uploaded file /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/config.yaml
+2023-11-17 11:33:28,009 INFO    wandb-upload_3:1025177 [upload_job.py:push():131] Uploaded file /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/output.log
+2023-11-17 11:33:28,182 INFO    wandb-upload_2:1025177 [upload_job.py:push():131] Uploaded file /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/files/requirements.txt
+2023-11-17 11:33:28,262 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-17 11:33:28,263 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: poll_exit
+2023-11-17 11:33:28,383 INFO    Thread-11 (_thread_body):1025177 [sender.py:transition_state():612] send defer: 11
+2023-11-17 11:33:28,384 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:28,384 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 11
+2023-11-17 11:33:28,385 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:28,385 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-11-17 11:33:28,386 INFO    SenderThread:1025177 [file_pusher.py:join():164] waiting for file pusher
+2023-11-17 11:33:28,386 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 12
+2023-11-17 11:33:28,387 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:28,387 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 12
+2023-11-17 11:33:28,388 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:28,388 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-11-17 11:33:28,620 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 13
+2023-11-17 11:33:28,620 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:28,621 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 13
+2023-11-17 11:33:28,621 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:28,622 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-11-17 11:33:28,622 INFO    SenderThread:1025177 [sender.py:transition_state():612] send defer: 14
+2023-11-17 11:33:28,622 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: defer
+2023-11-17 11:33:28,622 DEBUG   SenderThread:1025177 [sender.py:send():379] send: final
+2023-11-17 11:33:28,622 INFO    HandlerThread:1025177 [handler.py:handle_request_defer():170] handle defer: 14
+2023-11-17 11:33:28,623 DEBUG   SenderThread:1025177 [sender.py:send():379] send: footer
+2023-11-17 11:33:28,623 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: defer
+2023-11-17 11:33:28,623 INFO    SenderThread:1025177 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-11-17 11:33:28,624 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-17 11:33:28,625 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: poll_exit
+2023-11-17 11:33:28,625 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-17 11:33:28,625 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: poll_exit
+2023-11-17 11:33:28,626 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: server_info
+2023-11-17 11:33:28,626 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: get_summary
+2023-11-17 11:33:28,627 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: server_info
+2023-11-17 11:33:28,627 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: sampled_history
+2023-11-17 11:33:28,633 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: job_info
+2023-11-17 11:33:28,818 DEBUG   SenderThread:1025177 [sender.py:send_request():406] send_request: job_info
+2023-11-17 11:33:28,818 INFO    MainThread:1025177 [wandb_run.py:_footer_history_summary_info():3475] rendering history
+2023-11-17 11:33:28,820 INFO    MainThread:1025177 [wandb_run.py:_footer_history_summary_info():3507] rendering summary
+2023-11-17 11:33:28,820 INFO    MainThread:1025177 [wandb_run.py:_footer_sync_info():3434] logging synced files
+2023-11-17 11:33:28,821 DEBUG   HandlerThread:1025177 [handler.py:handle_request():144] handle_request: shutdown
+2023-11-17 11:33:28,821 INFO    HandlerThread:1025177 [handler.py:finish():857] shutting down handler
+2023-11-17 11:33:29,634 INFO    WriterThread:1025177 [datastore.py:close():294] close: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231117_113107-ukrzwr0n/run-ukrzwr0n.wandb
+2023-11-17 11:33:29,818 INFO    SenderThread:1025177 [sender.py:finish():1552] shutting down sender
+2023-11-17 11:33:29,818 INFO    SenderThread:1025177 [file_pusher.py:finish():159] shutting down file pusher
+2023-11-17 11:33:29,819 INFO    SenderThread:1025177 [file_pusher.py:join():164] waiting for file pusher

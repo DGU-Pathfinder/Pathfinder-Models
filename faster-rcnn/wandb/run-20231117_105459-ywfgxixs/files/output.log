@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/train.py", line 84, in <module>
+    train_one_epoch(model, optimizer, train_dataloader, device, epoch, print_freq=10)
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/engine.py", line 30, in train_one_epoch
+    loss_dict = model(images, targets)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torchvision/models/detection/generalized_rcnn.py", line 105, in forward
+    detections, detector_losses = self.roi_heads(features, proposals, images.image_sizes, targets)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torchvision/models/detection/roi_heads.py", line 772, in forward
+    loss_classifier, loss_box_reg = fastrcnn_loss(class_logits, box_regression, labels, regression_targets)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torchvision/models/detection/roi_heads.py", line 36, in fastrcnn_loss
+    sampled_pos_inds_subset = torch.where(labels > 0)[0]
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.

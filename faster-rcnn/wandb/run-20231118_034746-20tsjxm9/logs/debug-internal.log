@@ -1,0 +1,181 @@
+2023-11-18 03:47:46,714 INFO    StreamThr :1082242 [internal.py:wandb_internal():86] W&B internal server running at pid: 1082242, started at: 2023-11-18 03:47:46.712529
+2023-11-18 03:47:46,717 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: status
+2023-11-18 03:47:46,718 INFO    WriterThread:1082242 [datastore.py:open_for_write():85] open: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/run-20tsjxm9.wandb
+2023-11-18 03:47:46,722 DEBUG   SenderThread:1082242 [sender.py:send():379] send: header
+2023-11-18 03:47:46,730 DEBUG   SenderThread:1082242 [sender.py:send():379] send: run
+2023-11-18 03:47:47,450 INFO    SenderThread:1082242 [dir_watcher.py:__init__():211] watching files in: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files
+2023-11-18 03:47:47,451 INFO    SenderThread:1082242 [sender.py:_start_run_threads():1122] run started: 20tsjxm9 with start time 1700279266.713051
+2023-11-18 03:47:47,451 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: summary_record
+2023-11-18 03:47:47,452 INFO    SenderThread:1082242 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-18 03:47:47,466 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: check_version
+2023-11-18 03:47:47,467 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: check_version
+2023-11-18 03:47:47,609 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: run_start
+2023-11-18 03:47:47,624 DEBUG   HandlerThread:1082242 [system_info.py:__init__():31] System info init
+2023-11-18 03:47:47,624 DEBUG   HandlerThread:1082242 [system_info.py:__init__():46] System info init done
+2023-11-18 03:47:47,624 INFO    HandlerThread:1082242 [system_monitor.py:start():181] Starting system monitor
+2023-11-18 03:47:47,624 INFO    SystemMonitor:1082242 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-11-18 03:47:47,625 INFO    HandlerThread:1082242 [system_monitor.py:probe():201] Collecting system info
+2023-11-18 03:47:47,626 INFO    SystemMonitor:1082242 [interfaces.py:start():190] Started cpu monitoring
+2023-11-18 03:47:47,628 INFO    SystemMonitor:1082242 [interfaces.py:start():190] Started disk monitoring
+2023-11-18 03:47:47,630 INFO    SystemMonitor:1082242 [interfaces.py:start():190] Started gpu monitoring
+2023-11-18 03:47:47,632 INFO    SystemMonitor:1082242 [interfaces.py:start():190] Started memory monitoring
+2023-11-18 03:47:47,633 INFO    SystemMonitor:1082242 [interfaces.py:start():190] Started network monitoring
+2023-11-18 03:47:47,672 DEBUG   HandlerThread:1082242 [system_info.py:probe():195] Probing system
+2023-11-18 03:47:47,675 DEBUG   HandlerThread:1082242 [system_info.py:_probe_git():180] Probing git
+2023-11-18 03:47:47,694 DEBUG   HandlerThread:1082242 [system_info.py:_probe_git():188] Probing git done
+2023-11-18 03:47:47,694 DEBUG   HandlerThread:1082242 [system_info.py:probe():240] Probing system done
+2023-11-18 03:47:47,694 DEBUG   HandlerThread:1082242 [system_monitor.py:probe():210] {'os': 'Linux-5.10.0-1055-oem-x86_64-with-glibc2.27', 'python': '3.10.12', 'heartbeatAt': '2023-11-18T03:47:47.672349', 'startedAt': '2023-11-18T03:47:46.696387', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/train.py', 'codePath': 'faster-rcnn/train.py', 'git': {'remote': 'https://github.com/DGU-Pathfinder/Pathfinder-Models.git', 'commit': '6e3002b17590152a5448306991c30f2865839b82'}, 'email': 'junghyekim01@gmail.com', 'root': '/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai', 'host': '3068b64872e5', 'username': 'irteam', 'executable': '/home/irteam/anaconda3/envs/pixt/bin/python', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 1004.6809999999999, 'min': 1000.0, 'max': 3500.0}, 'cpu_freq_per_core': [{'current': 1000.259, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.94, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.911, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.061, 'min': 1000.0, 'max': 3500.0}, {'current': 1062.083, 'min': 1000.0, 'max': 3500.0}, {'current': 1001.229, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.381, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.693, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.686, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.944, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.187, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.557, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.095, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.387, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.303, 'min': 1000.0, 'max': 3500.0}, {'current': 1001.07, 'min': 1000.0, 'max': 3500.0}, {'current': 1087.274, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.179, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.751, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.195, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.354, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.192, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.621, 'min': 1000.0, 'max': 3500.0}, {'current': 1000.314, 'min': 1000.0, 'max': 3500.0}], 'disk': {'total': 1838.7526741027832, 'used': 205.56568908691406}, 'gpu': 'Quadro RTX 5000', 'gpu_count': 1, 'gpu_devices': [{'name': 'Quadro RTX 5000', 'memory_total': 17179869184}], 'memory': {'total': 30.992286682128906}}
+2023-11-18 03:47:47,695 INFO    HandlerThread:1082242 [system_monitor.py:probe():211] Finished collecting system info
+2023-11-18 03:47:47,695 INFO    HandlerThread:1082242 [system_monitor.py:probe():214] Publishing system info
+2023-11-18 03:47:47,695 DEBUG   HandlerThread:1082242 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-11-18 03:47:47,697 DEBUG   HandlerThread:1082242 [system_info.py:_save_pip():67] Saving pip packages done
+2023-11-18 03:47:47,698 DEBUG   HandlerThread:1082242 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-11-18 03:47:48,139 DEBUG   HandlerThread:1082242 [system_info.py:_save_conda():86] Saving conda packages done
+2023-11-18 03:47:48,142 INFO    HandlerThread:1082242 [system_monitor.py:probe():216] Finished publishing system info
+2023-11-18 03:47:48,153 DEBUG   SenderThread:1082242 [sender.py:send():379] send: files
+2023-11-18 03:47:48,153 INFO    SenderThread:1082242 [sender.py:_save_file():1376] saving file wandb-metadata.json with policy now
+2023-11-18 03:47:48,162 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: stop_status
+2023-11-18 03:47:48,164 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: stop_status
+2023-11-18 03:47:48,457 INFO    Thread-12 :1082242 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/conda-environment.yaml
+2023-11-18 03:47:48,458 INFO    Thread-12 :1082242 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/wandb-summary.json
+2023-11-18 03:47:48,460 INFO    Thread-12 :1082242 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/requirements.txt
+2023-11-18 03:47:48,461 INFO    Thread-12 :1082242 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/wandb-metadata.json
+2023-11-18 03:47:48,484 DEBUG   SenderThread:1082242 [sender.py:send():379] send: telemetry
+2023-11-18 03:47:48,919 INFO    wandb-upload_0:1082242 [upload_job.py:push():131] Uploaded file /tmp/tmpid32w9o5wandb/g89jp025-wandb-metadata.json
+2023-11-18 03:47:49,850 DEBUG   SenderThread:1082242 [sender.py:send():379] send: telemetry
+2023-11-18 03:47:50,094 DEBUG   SenderThread:1082242 [sender.py:send():379] send: exit
+2023-11-18 03:47:50,095 INFO    SenderThread:1082242 [sender.py:send_exit():584] handling exit code: 1
+2023-11-18 03:47:50,095 INFO    SenderThread:1082242 [sender.py:send_exit():586] handling runtime: 2
+2023-11-18 03:47:50,098 INFO    SenderThread:1082242 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-18 03:47:50,099 INFO    SenderThread:1082242 [sender.py:send_exit():592] send defer
+2023-11-18 03:47:50,100 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:50,100 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 0
+2023-11-18 03:47:50,101 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:50,102 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-11-18 03:47:50,102 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 1
+2023-11-18 03:47:50,102 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:50,103 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 1
+2023-11-18 03:47:50,103 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:50,103 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-11-18 03:47:50,103 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 2
+2023-11-18 03:47:50,104 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:50,104 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 2
+2023-11-18 03:47:50,105 INFO    HandlerThread:1082242 [system_monitor.py:finish():190] Stopping system monitor
+2023-11-18 03:47:50,105 DEBUG   SystemMonitor:1082242 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-11-18 03:47:50,106 INFO    HandlerThread:1082242 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-18 03:47:50,106 DEBUG   SystemMonitor:1082242 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-11-18 03:47:50,107 INFO    HandlerThread:1082242 [interfaces.py:finish():202] Joined disk monitor
+2023-11-18 03:47:50,108 DEBUG   SystemMonitor:1082242 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-11-18 03:47:50,132 INFO    HandlerThread:1082242 [interfaces.py:finish():202] Joined gpu monitor
+2023-11-18 03:47:50,133 INFO    HandlerThread:1082242 [interfaces.py:finish():202] Joined memory monitor
+2023-11-18 03:47:50,134 INFO    HandlerThread:1082242 [interfaces.py:finish():202] Joined network monitor
+2023-11-18 03:47:50,136 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:50,136 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-11-18 03:47:50,136 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 3
+2023-11-18 03:47:50,136 DEBUG   SenderThread:1082242 [sender.py:send():379] send: stats
+2023-11-18 03:47:50,137 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:50,137 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 3
+2023-11-18 03:47:50,138 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:50,138 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-11-18 03:47:50,138 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 4
+2023-11-18 03:47:50,138 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:50,139 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 4
+2023-11-18 03:47:50,139 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:50,139 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-11-18 03:47:50,139 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 5
+2023-11-18 03:47:50,140 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:50,140 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 5
+2023-11-18 03:47:50,141 DEBUG   SenderThread:1082242 [sender.py:send():379] send: summary
+2023-11-18 03:47:50,141 INFO    SenderThread:1082242 [sender.py:_save_file():1376] saving file wandb-summary.json with policy end
+2023-11-18 03:47:50,142 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:50,142 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-11-18 03:47:50,142 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 6
+2023-11-18 03:47:50,142 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:50,143 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 6
+2023-11-18 03:47:50,143 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:50,143 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-11-18 03:47:50,149 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: status_report
+2023-11-18 03:47:50,410 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 7
+2023-11-18 03:47:50,411 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:50,411 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 7
+2023-11-18 03:47:50,412 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:50,412 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-11-18 03:47:50,455 INFO    Thread-12 :1082242 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/config.yaml
+2023-11-18 03:47:50,456 INFO    Thread-12 :1082242 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/wandb-summary.json
+2023-11-18 03:47:50,456 INFO    Thread-12 :1082242 [dir_watcher.py:_on_file_created():272] file/dir created: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/output.log
+2023-11-18 03:47:51,094 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-18 03:47:52,114 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 8
+2023-11-18 03:47:52,115 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: poll_exit
+2023-11-18 03:47:52,115 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:52,116 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 8
+2023-11-18 03:47:52,116 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:52,116 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-11-18 03:47:52,116 INFO    SenderThread:1082242 [job_builder.py:build():280] Attempting to build job artifact
+2023-11-18 03:47:52,117 INFO    SenderThread:1082242 [job_builder.py:_get_source_type():389] is repo sourced job
+2023-11-18 03:47:52,119 INFO    SenderThread:1082242 [job_builder.py:build():363] adding wandb-job metadata file
+2023-11-18 03:47:52,156 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 9
+2023-11-18 03:47:52,157 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:52,157 DEBUG   SenderThread:1082242 [sender.py:send():379] send: artifact
+2023-11-18 03:47:52,157 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 9
+2023-11-18 03:47:52,457 INFO    Thread-12 :1082242 [dir_watcher.py:_on_file_modified():289] file/dir modified: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/output.log
+2023-11-18 03:47:53,238 INFO    SenderThread:1082242 [sender.py:send_artifact():1476] sent artifact job-https___github.com_DGU-Pathfinder_Pathfinder-Models.git_faster-rcnn_train.py - {'id': 'QXJ0aWZhY3Q6NjQxNDA2MzY2', 'digest': '6fa96227e164fe0b3401fe5f58bfa606', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_DGU-Pathfinder_Pathfinder-Models.git_faster-rcnn_train.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_DGU-Pathfinder_Pathfinder-Models.git_faster-rcnn_train.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjExNjYzMDM5Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjQxNDExMTYz', 'versionIndex': 1}}, 'version': 'v0'}
+2023-11-18 03:47:53,239 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:53,239 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-11-18 03:47:53,239 INFO    SenderThread:1082242 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-11-18 03:47:53,460 INFO    SenderThread:1082242 [dir_watcher.py:finish():389] scan: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files
+2023-11-18 03:47:53,460 INFO    SenderThread:1082242 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/config.yaml config.yaml
+2023-11-18 03:47:53,461 INFO    SenderThread:1082242 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/wandb-summary.json wandb-summary.json
+2023-11-18 03:47:53,467 INFO    SenderThread:1082242 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/requirements.txt requirements.txt
+2023-11-18 03:47:53,469 INFO    SenderThread:1082242 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/conda-environment.yaml conda-environment.yaml
+2023-11-18 03:47:53,481 INFO    SenderThread:1082242 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/wandb-metadata.json wandb-metadata.json
+2023-11-18 03:47:53,481 INFO    SenderThread:1082242 [dir_watcher.py:finish():403] scan save: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/output.log output.log
+2023-11-18 03:47:53,483 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 10
+2023-11-18 03:47:53,483 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:53,484 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 10
+2023-11-18 03:47:53,490 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:53,490 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-11-18 03:47:53,490 INFO    SenderThread:1082242 [file_pusher.py:finish():159] shutting down file pusher
+2023-11-18 03:47:53,963 INFO    wandb-upload_0:1082242 [upload_job.py:push():131] Uploaded file /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/config.yaml
+2023-11-18 03:47:54,211 INFO    wandb-upload_1:1082242 [upload_job.py:push():131] Uploaded file /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/wandb-summary.json
+2023-11-18 03:47:54,336 INFO    wandb-upload_3:1082242 [upload_job.py:push():131] Uploaded file /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/output.log
+2023-11-18 03:47:54,380 INFO    wandb-upload_2:1082242 [upload_job.py:push():131] Uploaded file /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/files/requirements.txt
+2023-11-18 03:47:54,581 INFO    Thread-11 (_thread_body):1082242 [sender.py:transition_state():612] send defer: 11
+2023-11-18 03:47:54,582 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:54,583 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 11
+2023-11-18 03:47:54,584 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:54,584 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-11-18 03:47:54,584 INFO    SenderThread:1082242 [file_pusher.py:join():164] waiting for file pusher
+2023-11-18 03:47:54,584 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 12
+2023-11-18 03:47:54,585 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:54,585 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 12
+2023-11-18 03:47:54,585 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:54,586 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-11-18 03:47:54,803 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 13
+2023-11-18 03:47:54,803 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:54,805 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 13
+2023-11-18 03:47:54,805 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:54,806 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-11-18 03:47:54,806 INFO    SenderThread:1082242 [sender.py:transition_state():612] send defer: 14
+2023-11-18 03:47:54,807 DEBUG   SenderThread:1082242 [sender.py:send():379] send: final
+2023-11-18 03:47:54,807 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: defer
+2023-11-18 03:47:54,807 DEBUG   SenderThread:1082242 [sender.py:send():379] send: footer
+2023-11-18 03:47:54,807 INFO    HandlerThread:1082242 [handler.py:handle_request_defer():170] handle defer: 14
+2023-11-18 03:47:54,808 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: defer
+2023-11-18 03:47:54,808 INFO    SenderThread:1082242 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-11-18 03:47:54,809 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: poll_exit
+2023-11-18 03:47:54,810 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: poll_exit
+2023-11-18 03:47:54,811 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: server_info
+2023-11-18 03:47:54,812 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: server_info
+2023-11-18 03:47:54,817 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: get_summary
+2023-11-18 03:47:54,818 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: sampled_history
+2023-11-18 03:47:54,818 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: job_info
+2023-11-18 03:47:55,005 DEBUG   SenderThread:1082242 [sender.py:send_request():406] send_request: job_info
+2023-11-18 03:47:55,006 INFO    MainThread:1082242 [wandb_run.py:_footer_history_summary_info():3475] rendering history
+2023-11-18 03:47:55,007 INFO    MainThread:1082242 [wandb_run.py:_footer_history_summary_info():3507] rendering summary
+2023-11-18 03:47:55,007 INFO    MainThread:1082242 [wandb_run.py:_footer_sync_info():3434] logging synced files
+2023-11-18 03:47:55,008 DEBUG   HandlerThread:1082242 [handler.py:handle_request():144] handle_request: shutdown
+2023-11-18 03:47:55,008 INFO    HandlerThread:1082242 [handler.py:finish():857] shutting down handler
+2023-11-18 03:47:55,819 INFO    WriterThread:1082242 [datastore.py:close():294] close: /home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/wandb/run-20231118_034746-20tsjxm9/run-20tsjxm9.wandb
+2023-11-18 03:47:56,006 INFO    SenderThread:1082242 [sender.py:finish():1552] shutting down sender
+2023-11-18 03:47:56,006 INFO    SenderThread:1082242 [file_pusher.py:finish():159] shutting down file pusher
+2023-11-18 03:47:56,006 INFO    SenderThread:1082242 [file_pusher.py:join():164] waiting for file pusher

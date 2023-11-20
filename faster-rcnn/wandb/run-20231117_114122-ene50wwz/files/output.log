@@ -1,0 +1,55 @@
+
+Epoch: [0]  [  0/455]  eta: 0:22:53  lr: 0.000001  loss: 5.4008 (5.4008)  loss_classifier: 1.2323 (1.2323)  loss_box_reg: 0.0331 (0.0331)  loss_objectness: 3.7610 (3.7610)  loss_rpn_box_reg: 0.3744 (0.3744)  time: 3.0187  data: 0.6216  max mem: 2727
+Epoch: [0]  [ 10/455]  eta: 0:04:47  lr: 0.000005  loss: 4.3623 (4.4530)  loss_classifier: 1.2301 (1.2272)  loss_box_reg: 0.0172 (0.0189)  loss_objectness: 3.0107 (2.9591)  loss_rpn_box_reg: 0.2395 (0.2478)  time: 0.6467  data: 0.0707  max mem: 3247
+Epoch: [0]  [ 20/455]  eta: 0:03:56  lr: 0.000009  loss: 3.2646 (3.9547)  loss_classifier: 1.1887 (1.1614)  loss_box_reg: 0.0134 (0.0169)  loss_objectness: 1.7144 (2.5349)  loss_rpn_box_reg: 0.2382 (0.2415)  time: 0.4209  data: 0.0179  max mem: 3431
+Epoch: [0]  [ 30/455]  eta: 0:03:35  lr: 0.000014  loss: 2.7154 (3.5869)  loss_classifier: 0.9266 (1.0504)  loss_box_reg: 0.0174 (0.0219)  loss_objectness: 1.4815 (2.3086)  loss_rpn_box_reg: 0.1446 (0.2060)  time: 0.4296  data: 0.0203  max mem: 3438
+Epoch: [0]  [ 40/455]  eta: 0:03:23  lr: 0.000018  loss: 2.2147 (3.2521)  loss_classifier: 0.7083 (0.9408)  loss_box_reg: 0.0246 (0.0251)  loss_objectness: 1.3436 (2.0829)  loss_rpn_box_reg: 0.1241 (0.2033)  time: 0.4335  data: 0.0193  max mem: 3451
+Epoch: [0]  [ 50/455]  eta: 0:03:12  lr: 0.000023  loss: 1.5943 (2.8752)  loss_classifier: 0.5111 (0.8460)  loss_box_reg: 0.0371 (0.0297)  loss_objectness: 0.9024 (1.8072)  loss_rpn_box_reg: 0.1453 (0.1923)  time: 0.4285  data: 0.0183  max mem: 3451
+Epoch: [0]  [ 60/455]  eta: 0:03:05  lr: 0.000027  loss: 0.8997 (2.5542)  loss_classifier: 0.3798 (0.7639)  loss_box_reg: 0.0371 (0.0320)  loss_objectness: 0.3364 (1.5670)  loss_rpn_box_reg: 0.1208 (0.1913)  time: 0.4262  data: 0.0178  max mem: 3798
+Epoch: [0]  [ 70/455]  eta: 0:02:57  lr: 0.000031  loss: 0.6171 (2.2794)  loss_classifier: 0.3074 (0.6931)  loss_box_reg: 0.0306 (0.0329)  loss_objectness: 0.1503 (1.3714)  loss_rpn_box_reg: 0.1208 (0.1820)  time: 0.4234  data: 0.0171  max mem: 3798
+Epoch: [0]  [ 80/455]  eta: 0:02:54  lr: 0.000036  loss: 0.5158 (2.0862)  loss_classifier: 0.1958 (0.6296)  loss_box_reg: 0.0363 (0.0346)  loss_objectness: 0.1162 (1.2327)  loss_rpn_box_reg: 0.1148 (0.1892)  time: 0.4568  data: 0.0177  max mem: 4159
+Epoch: [0]  [ 90/455]  eta: 0:02:48  lr: 0.000040  loss: 0.4554 (1.9270)  loss_classifier: 0.1520 (0.5741)  loss_box_reg: 0.0401 (0.0358)  loss_objectness: 0.1061 (1.1223)  loss_rpn_box_reg: 0.1851 (0.1948)  time: 0.4657  data: 0.0173  max mem: 4159
+Epoch: [0]  [100/455]  eta: 0:02:44  lr: 0.000045  loss: 0.4204 (1.7741)  loss_classifier: 0.1024 (0.5257)  loss_box_reg: 0.0322 (0.0356)  loss_objectness: 0.0866 (1.0220)  loss_rpn_box_reg: 0.1781 (0.1908)  time: 0.4481  data: 0.0173  max mem: 4159
+Epoch: [0]  [110/455]  eta: 0:02:39  lr: 0.000049  loss: 0.4166 (1.6608)  loss_classifier: 0.0840 (0.4866)  loss_box_reg: 0.0322 (0.0369)  loss_objectness: 0.1000 (0.9441)  loss_rpn_box_reg: 0.1667 (0.1932)  time: 0.4602  data: 0.0195  max mem: 4159
+Traceback (most recent call last):
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/train.py", line 86, in <module>
+    train_one_epoch(model, optimizer, train_dataloader, device, epoch, print_freq=10)
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/engine.py", line 26, in train_one_epoch
+    for images, targets in metric_logger.log_every(data_loader, print_freq, header):
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/utils.py", line 201, in log_every
+    for obj in iterable:
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 2.
+Original Traceback (most recent call last):
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/dataset.py", line 61, in __getitem__
+    sample=self.transforms(image=image_res,
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/composition.py", line 207, in __call__
+    p.preprocess(data)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/utils.py", line 83, in preprocess
+    data[data_name] = self.check_and_convert(data[data_name], rows, cols, direction="to")
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/utils.py", line 91, in check_and_convert
+    return self.convert_to_albumentations(data, rows, cols)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 142, in convert_to_albumentations
+    return convert_bboxes_to_albumentations(data, self.params.format, rows, cols, check_validity=True)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 408, in convert_bboxes_to_albumentations
+    return [convert_bbox_to_albumentations(bbox, source_format, rows, cols, check_validity) for bbox in bboxes]
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 408, in <listcomp>
+    return [convert_bbox_to_albumentations(bbox, source_format, rows, cols, check_validity) for bbox in bboxes]
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 352, in convert_bbox_to_albumentations
+    check_bbox(bbox)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 435, in check_bbox
+    raise ValueError(f"Expected {name} for bbox {bbox} to be in the range [0.0, 1.0], got {value}.")
+ValueError: Expected y_max for bbox (tensor(0.6238), tensor(0.9011), tensor(0.6598), tensor(1.0045), tensor(3)) to be in the range [0.0, 1.0], got 1.0044944286346436.

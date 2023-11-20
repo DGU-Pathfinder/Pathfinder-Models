@@ -1,0 +1,70 @@
+
+Epoch: [0]  [  0/455]  eta: 0:21:22  lr: 0.000001  loss: 7.4971 (7.4971)  loss_classifier: 1.4535 (1.4535)  loss_box_reg: 0.0038 (0.0038)  loss_objectness: 5.5741 (5.5741)  loss_rpn_box_reg: 0.4658 (0.4658)  time: 2.8198  data: 0.3649  max mem: 3016
+Epoch: [0]  [ 10/455]  eta: 0:05:05  lr: 0.000005  loss: 5.2733 (5.6493)  loss_classifier: 1.4445 (1.4374)  loss_box_reg: 0.0038 (0.0041)  loss_objectness: 3.5931 (3.9044)  loss_rpn_box_reg: 0.2611 (0.3034)  time: 0.6866  data: 0.0419  max mem: 3174
+Epoch: [0]  [ 20/455]  eta: 0:04:09  lr: 0.000009  loss: 5.5376 (5.8469)  loss_classifier: 1.3838 (1.3669)  loss_box_reg: 0.0034 (0.0041)  loss_objectness: 3.8210 (4.1305)  loss_rpn_box_reg: 0.3040 (0.3454)  time: 0.4614  data: 0.0096  max mem: 3175
+Epoch: [0]  [ 30/455]  eta: 0:03:52  lr: 0.000014  loss: 4.6532 (5.2608)  loss_classifier: 1.1447 (1.2597)  loss_box_reg: 0.0035 (0.0043)  loss_objectness: 3.2657 (3.6768)  loss_rpn_box_reg: 0.3182 (0.3200)  time: 0.4700  data: 0.0099  max mem: 3175
+Epoch: [0]  [ 40/455]  eta: 0:03:40  lr: 0.000018  loss: 2.6800 (4.5665)  loss_classifier: 0.9244 (1.1483)  loss_box_reg: 0.0035 (0.0045)  loss_objectness: 1.4571 (3.0888)  loss_rpn_box_reg: 0.2582 (0.3249)  time: 0.4853  data: 0.0094  max mem: 3175
+Epoch: [0]  [ 50/455]  eta: 0:03:31  lr: 0.000023  loss: 1.6366 (3.9132)  loss_classifier: 0.6741 (1.0351)  loss_box_reg: 0.0044 (0.0049)  loss_objectness: 0.5102 (2.5537)  loss_rpn_box_reg: 0.2582 (0.3195)  time: 0.4836  data: 0.0088  max mem: 3176
+Epoch: [0]  [ 60/455]  eta: 0:03:23  lr: 0.000027  loss: 0.9718 (3.4167)  loss_classifier: 0.4423 (0.9202)  loss_box_reg: 0.0066 (0.0051)  loss_objectness: 0.2447 (2.1845)  loss_rpn_box_reg: 0.2150 (0.3070)  time: 0.4847  data: 0.0089  max mem: 3176
+Epoch: [0]  [ 70/455]  eta: 0:03:16  lr: 0.000031  loss: 0.7734 (3.0396)  loss_classifier: 0.2272 (0.8139)  loss_box_reg: 0.0066 (0.0052)  loss_objectness: 0.2499 (1.9224)  loss_rpn_box_reg: 0.1946 (0.2981)  time: 0.4825  data: 0.0088  max mem: 3176
+Epoch: [0]  [ 80/455]  eta: 0:03:10  lr: 0.000036  loss: 0.5912 (2.7433)  loss_classifier: 0.1112 (0.7249)  loss_box_reg: 0.0049 (0.0053)  loss_objectness: 0.2159 (1.7086)  loss_rpn_box_reg: 0.2157 (0.3045)  time: 0.4869  data: 0.0088  max mem: 3176
+Epoch: [0]  [ 90/455]  eta: 0:03:04  lr: 0.000040  loss: 0.5912 (2.5154)  loss_classifier: 0.0754 (0.6520)  loss_box_reg: 0.0049 (0.0055)  loss_objectness: 0.2090 (1.5483)  loss_rpn_box_reg: 0.2814 (0.3096)  time: 0.4897  data: 0.0089  max mem: 3176
+Epoch: [0]  [100/455]  eta: 0:02:59  lr: 0.000045  loss: 0.6302 (2.3292)  loss_classifier: 0.0552 (0.5927)  loss_box_reg: 0.0062 (0.0058)  loss_objectness: 0.2239 (1.4208)  loss_rpn_box_reg: 0.2766 (0.3099)  time: 0.4912  data: 0.0091  max mem: 3176
+Epoch: [0]  [110/455]  eta: 0:02:53  lr: 0.000049  loss: 0.5006 (2.1653)  loss_classifier: 0.0479 (0.5438)  loss_box_reg: 0.0070 (0.0061)  loss_objectness: 0.1895 (1.3093)  loss_rpn_box_reg: 0.2459 (0.3061)  time: 0.4954  data: 0.0090  max mem: 3176
+Epoch: [0]  [120/455]  eta: 0:02:48  lr: 0.000053  loss: 0.5251 (2.0369)  loss_classifier: 0.0452 (0.5037)  loss_box_reg: 0.0070 (0.0069)  loss_objectness: 0.1786 (1.2175)  loss_rpn_box_reg: 0.2694 (0.3087)  time: 0.4911  data: 0.0088  max mem: 3176
+Epoch: [0]  [130/455]  eta: 0:02:43  lr: 0.000058  loss: 0.5094 (1.9194)  loss_classifier: 0.0393 (0.4685)  loss_box_reg: 0.0074 (0.0070)  loss_objectness: 0.1416 (1.1351)  loss_rpn_box_reg: 0.3005 (0.3087)  time: 0.4867  data: 0.0087  max mem: 3176
+Epoch: [0]  [140/455]  eta: 0:02:37  lr: 0.000062  loss: 0.4335 (1.8215)  loss_classifier: 0.0342 (0.4380)  loss_box_reg: 0.0064 (0.0070)  loss_objectness: 0.1383 (1.0714)  loss_rpn_box_reg: 0.2684 (0.3051)  time: 0.4868  data: 0.0083  max mem: 3176
+Epoch: [0]  [150/455]  eta: 0:02:32  lr: 0.000067  loss: 0.3934 (1.7271)  loss_classifier: 0.0342 (0.4112)  loss_box_reg: 0.0048 (0.0069)  loss_objectness: 0.1439 (1.0105)  loss_rpn_box_reg: 0.1842 (0.2984)  time: 0.4883  data: 0.0086  max mem: 3176
+Epoch: [0]  [160/455]  eta: 0:02:27  lr: 0.000071  loss: 0.4321 (1.6549)  loss_classifier: 0.0356 (0.3885)  loss_box_reg: 0.0070 (0.0072)  loss_objectness: 0.1439 (0.9591)  loss_rpn_box_reg: 0.2158 (0.3001)  time: 0.4913  data: 0.0091  max mem: 3176
+Epoch: [0]  [170/455]  eta: 0:02:22  lr: 0.000075  loss: 0.4752 (1.5828)  loss_classifier: 0.0357 (0.3679)  loss_box_reg: 0.0082 (0.0072)  loss_objectness: 0.1510 (0.9133)  loss_rpn_box_reg: 0.2357 (0.2945)  time: 0.4910  data: 0.0091  max mem: 3176
+Epoch: [0]  [180/455]  eta: 0:02:16  lr: 0.000080  loss: 0.3939 (1.5239)  loss_classifier: 0.0328 (0.3496)  loss_box_reg: 0.0072 (0.0073)  loss_objectness: 0.1510 (0.8729)  loss_rpn_box_reg: 0.1826 (0.2941)  time: 0.4867  data: 0.0092  max mem: 3176
+Epoch: [0]  [190/455]  eta: 0:02:11  lr: 0.000084  loss: 0.3854 (1.4701)  loss_classifier: 0.0299 (0.3335)  loss_box_reg: 0.0067 (0.0075)  loss_objectness: 0.1705 (0.8381)  loss_rpn_box_reg: 0.1902 (0.2910)  time: 0.4885  data: 0.0094  max mem: 3176
+Epoch: [0]  [200/455]  eta: 0:02:06  lr: 0.000089  loss: 0.4242 (1.4203)  loss_classifier: 0.0342 (0.3192)  loss_box_reg: 0.0067 (0.0077)  loss_objectness: 0.1701 (0.8044)  loss_rpn_box_reg: 0.2081 (0.2889)  time: 0.4949  data: 0.0095  max mem: 3176
+Epoch: [0]  [210/455]  eta: 0:02:01  lr: 0.000093  loss: 0.4273 (1.3748)  loss_classifier: 0.0351 (0.3060)  loss_box_reg: 0.0054 (0.0077)  loss_objectness: 0.1612 (0.7752)  loss_rpn_box_reg: 0.2178 (0.2859)  time: 0.4948  data: 0.0092  max mem: 3176
+Epoch: [0]  [220/455]  eta: 0:01:56  lr: 0.000097  loss: 0.4099 (1.3359)  loss_classifier: 0.0350 (0.2937)  loss_box_reg: 0.0054 (0.0077)  loss_objectness: 0.1647 (0.7483)  loss_rpn_box_reg: 0.2056 (0.2861)  time: 0.4879  data: 0.0090  max mem: 3176
+Epoch: [0]  [230/455]  eta: 0:01:51  lr: 0.000102  loss: 0.3753 (1.2966)  loss_classifier: 0.0338 (0.2824)  loss_box_reg: 0.0048 (0.0075)  loss_objectness: 0.1647 (0.7238)  loss_rpn_box_reg: 0.1684 (0.2829)  time: 0.4841  data: 0.0091  max mem: 3176
+Epoch: [0]  [240/455]  eta: 0:01:46  lr: 0.000106  loss: 0.5199 (1.2672)  loss_classifier: 0.0362 (0.2724)  loss_box_reg: 0.0057 (0.0076)  loss_objectness: 0.1674 (0.7002)  loss_rpn_box_reg: 0.2936 (0.2869)  time: 0.4871  data: 0.0091  max mem: 3176
+Epoch: [0]  [250/455]  eta: 0:01:41  lr: 0.000111  loss: 0.5208 (1.2351)  loss_classifier: 0.0371 (0.2632)  loss_box_reg: 0.0076 (0.0078)  loss_objectness: 0.1576 (0.6790)  loss_rpn_box_reg: 0.3020 (0.2851)  time: 0.4852  data: 0.0092  max mem: 3176
+Epoch: [0]  [260/455]  eta: 0:01:36  lr: 0.000115  loss: 0.4096 (1.2034)  loss_classifier: 0.0310 (0.2544)  loss_box_reg: 0.0061 (0.0078)  loss_objectness: 0.1487 (0.6592)  loss_rpn_box_reg: 0.1887 (0.2820)  time: 0.4853  data: 0.0092  max mem: 3176
+Traceback (most recent call last):
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/train.py", line 86, in <module>
+    train_one_epoch(model, optimizer, train_dataloader, device, epoch, print_freq=10)
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/engine.py", line 26, in train_one_epoch
+    for images, targets in metric_logger.log_every(data_loader, print_freq, header):
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/utils.py", line 201, in log_every
+    for obj in iterable:
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 3.
+Original Traceback (most recent call last):
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/dataset.py", line 61, in __getitem__
+    sample=self.transforms(image=image_res,
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/composition.py", line 207, in __call__
+    p.preprocess(data)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/utils.py", line 83, in preprocess
+    data[data_name] = self.check_and_convert(data[data_name], rows, cols, direction="to")
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/utils.py", line 91, in check_and_convert
+    return self.convert_to_albumentations(data, rows, cols)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 142, in convert_to_albumentations
+    return convert_bboxes_to_albumentations(data, self.params.format, rows, cols, check_validity=True)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 408, in convert_bboxes_to_albumentations
+    return [convert_bbox_to_albumentations(bbox, source_format, rows, cols, check_validity) for bbox in bboxes]
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 408, in <listcomp>
+    return [convert_bbox_to_albumentations(bbox, source_format, rows, cols, check_validity) for bbox in bboxes]
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 352, in convert_bbox_to_albumentations
+    check_bbox(bbox)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 435, in check_bbox
+    raise ValueError(f"Expected {name} for bbox {bbox} to be in the range [0.0, 1.0], got {value}.")
+ValueError: Expected x_min for bbox (tensor(1.7048), tensor(0.1331), tensor(1.7235), tensor(0.1511), tensor(2)) to be in the range [0.0, 1.0], got 1.7047816514968872.

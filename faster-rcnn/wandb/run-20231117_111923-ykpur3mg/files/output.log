@@ -1,0 +1,47 @@
+
+Epoch: [0]  [  0/455]  eta: 0:20:34  lr: 0.000001  loss: 9.7364 (9.7364)  loss_classifier: 2.0549 (2.0549)  loss_box_reg: 0.0074 (0.0074)  loss_objectness: 7.2300 (7.2300)  loss_rpn_box_reg: 0.4440 (0.4440)  time: 2.7132  data: 0.3968  max mem: 3016
+Epoch: [0]  [ 10/455]  eta: 0:05:05  lr: 0.000005  loss: 8.0564 (8.4862)  loss_classifier: 2.0100 (2.0154)  loss_box_reg: 0.0051 (0.0057)  loss_objectness: 5.5976 (5.9426)  loss_rpn_box_reg: 0.4618 (0.5226)  time: 0.6876  data: 0.0436  max mem: 3174
+Epoch: [0]  [ 20/455]  eta: 0:04:18  lr: 0.000009  loss: 7.8030 (7.6950)  loss_classifier: 1.9689 (1.9106)  loss_box_reg: 0.0044 (0.0053)  loss_objectness: 5.3722 (5.3064)  loss_rpn_box_reg: 0.4618 (0.4727)  time: 0.4874  data: 0.0086  max mem: 3174
+Epoch: [0]  [ 30/455]  eta: 0:03:57  lr: 0.000014  loss: 5.0957 (6.6497)  loss_classifier: 1.6109 (1.7442)  loss_box_reg: 0.0040 (0.0048)  loss_objectness: 3.1994 (4.4862)  loss_rpn_box_reg: 0.2985 (0.4146)  time: 0.4896  data: 0.0088  max mem: 3174
+Traceback (most recent call last):
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/train.py", line 86, in <module>
+    train_one_epoch(model, optimizer, train_dataloader, device, epoch, print_freq=10)
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/engine.py", line 26, in train_one_epoch
+    for images, targets in metric_logger.log_every(data_loader, print_freq, header):
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/utils.py", line 201, in log_every
+    for obj in iterable:
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 2.
+Original Traceback (most recent call last):
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/dataset.py", line 61, in __getitem__
+    sample=self.transforms(image=image_res,
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/composition.py", line 207, in __call__
+    p.preprocess(data)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/utils.py", line 83, in preprocess
+    data[data_name] = self.check_and_convert(data[data_name], rows, cols, direction="to")
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/utils.py", line 91, in check_and_convert
+    return self.convert_to_albumentations(data, rows, cols)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 142, in convert_to_albumentations
+    return convert_bboxes_to_albumentations(data, self.params.format, rows, cols, check_validity=True)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 408, in convert_bboxes_to_albumentations
+    return [convert_bbox_to_albumentations(bbox, source_format, rows, cols, check_validity) for bbox in bboxes]
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 408, in <listcomp>
+    return [convert_bbox_to_albumentations(bbox, source_format, rows, cols, check_validity) for bbox in bboxes]
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 352, in convert_bbox_to_albumentations
+    check_bbox(bbox)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/albumentations/core/bbox_utils.py", line 438, in check_bbox
+    raise ValueError(f"x_max is less than or equal to x_min for bbox {bbox}.")
+ValueError: x_max is less than or equal to x_min for bbox (tensor(0.), tensor(0.), tensor(0.), tensor(0.), tensor(0)).

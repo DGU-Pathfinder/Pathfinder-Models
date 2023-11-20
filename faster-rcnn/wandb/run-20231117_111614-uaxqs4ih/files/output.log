@@ -1,0 +1,14 @@
+
+Epoch: [0]  [  0/455]  eta: 0:20:53  lr: 0.000001  loss: 9.8384 (9.8384)  loss_classifier: 1.6040 (1.6040)  loss_box_reg: 0.0131 (0.0131)  loss_objectness: 7.3122 (7.3122)  loss_rpn_box_reg: 0.9090 (0.9090)  time: 2.7552  data: 0.3620  max mem: 3016
+Traceback (most recent call last):
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/train.py", line 86, in <module>
+    train_one_epoch(model, optimizer, train_dataloader, device, epoch, print_freq=10)
+  File "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/engine.py", line 30, in train_one_epoch
+    loss_dict = model(images, targets)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torchvision/models/detection/generalized_rcnn.py", line 67, in forward
+    torch._assert(
+  File "/home/irteam/anaconda3/envs/pixt/lib/python3.10/site-packages/torch/__init__.py", line 1209, in _assert
+    assert condition, message
+AssertionError: Expected target boxes to be a tensor of shape [N, 4], got torch.Size([0]).

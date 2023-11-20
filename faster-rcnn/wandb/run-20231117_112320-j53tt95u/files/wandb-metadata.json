@@ -1,0 +1,165 @@
+{
+    "os": "Linux-5.10.0-1055-oem-x86_64-with-glibc2.27",
+    "python": "3.10.12",
+    "heartbeatAt": "2023-11-17T11:23:21.132785",
+    "startedAt": "2023-11-17T11:23:20.287951",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai/faster-rcnn/train.py",
+    "codePath": "faster-rcnn/train.py",
+    "git": {
+        "remote": "https://github.com/DGU-Pathfinder/Pathfinder-Models.git",
+        "commit": "6e3002b17590152a5448306991c30f2865839b82"
+    },
+    "email": "junghyekim01@gmail.com",
+    "root": "/home/irteam/junghye-dcloud-dir/pathfinder/pathfinder_ai",
+    "host": "3068b64872e5",
+    "username": "irteam",
+    "executable": "/home/irteam/anaconda3/envs/pixt/bin/python",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 1969.7051666666664,
+        "min": 1000.0,
+        "max": 3500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1163.485,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1002.738,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3028.078,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.012,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3015.457,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3026.932,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2139.321,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1059.235,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1164.981,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3026.58,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3000.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1028.657,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1163.043,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1037.242,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3003.407,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1000.013,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3005.487,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3005.317,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2140.695,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1060.012,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1165.153,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3019.575,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 3013.911,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1003.593,
+            "min": 1000.0,
+            "max": 3500.0
+        }
+    ],
+    "disk": {
+        "total": 1838.7526741027832,
+        "used": 205.564208984375
+    },
+    "gpu": "Quadro RTX 5000",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Quadro RTX 5000",
+            "memory_total": 17179869184
+        }
+    ],
+    "memory": {
+        "total": 30.992286682128906
+    }
+}
