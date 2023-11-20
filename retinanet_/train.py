@@ -17,45 +17,15 @@ from torch.utils.data import DataLoader, Dataset
 
 from retinanet import model
 from retinanet.dataloader import collater, Resizer, Augmenter, Normalizer, UnNormalizer,CSVDataset
-from config import *
-
-
-train_data=CSVDataset('./data/annotations/new_train.csv','./data/annotations/classes.csv',transform=T.Compose([Augmenter(),Normalizer(),Resizer()])) 
-test_data=CSVDataset('./data/annotations/new_test.csv','./data/annotations/classes.csv',transform=T.Compose([Augmenter(),Normalizer(),Resizer()])) 
+from config import Config
+from dataset import RT_Dataset
+import wandb
+    
         
-        
-train_data_loader = DataLoader(
-    train_data,
-    batch_size = train_BS,
-    shuffle = True,
-    num_workers = num_workers,
-    collate_fn = collater
-)
-
-valid_data_loader = DataLoader(
-    test_data,
-    batch_size = valid_BS,
-    shuffle = True,
-    num_workers = num_workers,
-    collate_fn = collater
-)
-
-
-
-device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-torch.cuda.empty_cache()
-retinanet = model.resnet50(num_classes = 3, pretrained = True)
-
-optimizer = torch.optim.Adam(retinanet.parameters(), lr = lr,weight_decay=weight_decay)
-lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 5, gamma=0.5)
-
-
-retinanet.to(device)
-
 
 best_loss=float('inf')
 
-def train_one_epoch(epoch_num, train_data_loader):
+def train_one_epoch(retinanet,epoch_num,optimizer,scheduler, train_data_loader,device):
     
     print("Epoch - {} Started".format(epoch_num))
     st = time.time()
@@ -101,6 +71,9 @@ def train_one_epoch(epoch_num, train_data_loader):
         del classification_loss
         del regression_loss
         
+    wandb.log({
+        'avg_train_loss':round(np.mean(epoch_loss),4)
+    })
     # Update the learning rate
     if lr_scheduler is not None:
         lr_scheduler.step()
@@ -110,7 +83,7 @@ def train_one_epoch(epoch_num, train_data_loader):
     
     
     
-def valid_one_epoch(epoch_num, valid_data_loader):
+def valid_one_epoch(retinanet,epoch_num, valid_data_loader,device):
     global best_loss #가장 좋은 손실값 업데이트하기 위해 global 변수로 선언
     
     print("Epoch - {} Started".format(epoch_num))
@@ -141,6 +114,9 @@ def valid_one_epoch(epoch_num, valid_data_loader):
             del regression_loss
         
     avg_epoch_loss=np.mean(epoch_loss)
+    wandb.log({
+        'avg_val_loss': round(avg_epoch_loss,4)
+    })
     
     if avg_epoch_loss <best_loss:
         best_loss=avg_epoch_loss
@@ -148,22 +124,62 @@ def valid_one_epoch(epoch_num, valid_data_loader):
         if not os.path.exists('./models'):
             os.makedirs("./models")
             
-        torch.save(retinanet, "./models/bestloss_retinanet_ep150.pt")
+        torch.save(retinanet, f"./models/retinanet_{Config['CONTRAST']}_{Config['EPOCHS']}.pt")
         print(f"Epoch {epoch_num}: Validation loss improved, model saved.")
          
-         
+        
     et = time.time()
     print("\n Total Time - {}\n".format(int(et - st)))
     
     # Save Model after each epoch
   
             
-            
-### Training Loop
-for epoch in range(epochs):
+     
+if __name__=='__main__':
+    # wandb project
+    wandb.init(project='capstone',name='retinanet',reinit=True)
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    torch.cuda.empty_cache()
     
-    # Call train function
-    train_one_epoch(epoch, train_data_loader)
-    # Call valid function
-    valid_one_epoch(epoch, valid_data_loader)
+    # dataset 
+    train_df=pd.read_csv('../../data/annotations/train_total.csv')
+    valid_df=pd.read_csv('../../data/annotations/valid_total.csv')
+    image_dir='../../data_contrast/after/Image'
+
+    train_dataset=RT_Dataset(train_df,image_dir,transforms=T.Compose([Augmenter(),Normalizer(),Resizer()]))
+    valid_dataset=RT_Dataset(valid_df,image_dir,transforms=T.Compose([Normalizer(),Resizer()]))
+
+            
+    train_data_loader = DataLoader(
+        train_dataset,
+        batch_size = Config['TRAIN_BS'],
+        shuffle = True,
+        num_workers = Config['NUM_WORKERS'],
+        collate_fn = collater
+    )
+
+    valid_data_loader = DataLoader(
+        valid_dataset,
+        batch_size = Config['VALID_BS'],
+        shuffle = True,
+        num_workers = Config['NUM_WORKERS'],
+        collate_fn = collater
+    )
+    # load model
+    retinanet = model.resnet50(num_classes = Config['NUM_CLASSES'], pretrained = True)
+    retinanet.to(device)
+    wandb.watch(retinanet)
+    
+    
+    optimizer = torch.optim.Adam(retinanet.parameters(), lr = Config['LR'],weight_decay=Config['WEIGHT_DECAY'])
+    lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size = 5, gamma=0.5)
+
+
+    ### Training Loop
+    for epoch in range(Config['EPOCHS']):
+        
+        # Call train function
+        train_one_epoch(retinanet,epoch, optimizer,lr_scheduler,train_data_loader,device=device)
+        # Call valid function
+        valid_one_epoch(retinanet,epoch, valid_data_loader,device=device)
     

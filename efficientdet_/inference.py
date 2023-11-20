@@ -178,7 +178,7 @@ def calculate_metrics(predictions, ground_truths, iou_threshold=0.0001):
 
 
 def main():
-    test_ann_dir='/home/irteam/junghye-dcloud-dir/pathfinder/data/annotations/val.csv'
+    test_ann_dir='.annotations/test_total.csv'
     image_dir='/home/irteam/junghye-dcloud-dir/pathfinder/data/Image'
     test_dataset=RT_dataset(image_dir,test_ann_dir,transforms=get_test_transform())
     test_ann=pd.read_csv(test_ann_dir)

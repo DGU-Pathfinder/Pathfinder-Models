@@ -62,7 +62,7 @@ def _compute_ap(recall, precision):
     return ap
 
 
-def _get_detections(dataset, retinanet, score_threshold=0.05, max_detections=100, save_path=None):
+def _get_detections(dataset, retinanet, score_threshold=0.05, max_detections=100, num_classes=3,save_path=None):
     """ Get the detections from the retinanet using the generator.
     The result is a list of lists such that the size is:
         all_detections[num_images][num_classes] = detections[num_detections, 4 + num_classes]
@@ -75,7 +75,7 @@ def _get_detections(dataset, retinanet, score_threshold=0.05, max_detections=100
     # Returns
         A list of lists containing the detections for each image in the generator.
     """
-    all_detections = [[None for i in range(dataset.num_classes())] for j in range(len(dataset))]
+    all_detections = [[None for i in range(num_classes)] for j in range(len(dataset))]
 
     retinanet.eval()
     
@@ -102,7 +102,7 @@ def _get_detections(dataset, retinanet, score_threshold=0.05, max_detections=100
            # print(f'indices:{indices}')
            
             if indices.shape[0] > 0:
-                print(f'bndbox가 존재함')
+                #print(f'bndbox가 존재함')
                 # select those scores
                 scores = scores[indices]
 
@@ -116,11 +116,11 @@ def _get_detections(dataset, retinanet, score_threshold=0.05, max_detections=100
                 image_detections = np.concatenate([image_boxes, np.expand_dims(image_scores, axis=1), np.expand_dims(image_labels, axis=1)], axis=1)
 
                 # copy detections to all_detections
-                for label in range(dataset.num_classes()):
+                for label in range(num_classes):
                     all_detections[index][label] = image_detections[image_detections[:, -1] == label, :-1]
             else:
                 # copy detections to all_detections
-                for label in range(dataset.num_classes()):
+                for label in range(num_classes):
                     all_detections[index][label] = np.zeros((0, 5))
 
             print('{}/{}'.format(index + 1, len(dataset)), end='\r')
@@ -128,7 +128,7 @@ def _get_detections(dataset, retinanet, score_threshold=0.05, max_detections=100
     return all_detections
 
 
-def _get_annotations(generator):
+def _get_annotations(generator,num_classes=3):
     """ Get the ground truth annotations from the generator.
     The result is a list of lists such that the size is:
         all_detections[num_images][num_classes] = annotations[num_detections, 5]
@@ -137,15 +137,15 @@ def _get_annotations(generator):
     # Returns
         A list of lists containing the annotations for each image in the generator.
     """
-    all_annotations = [[None for i in range(generator.num_classes())] for j in range(len(generator))]
+    all_annotations = [[None for i in range(num_classes)] for j in range(len(generator))]
 
     for i in range(len(generator)):
         # load the annotations
-        annotations = generator.load_annotations(i)
+        annotations = generator[i]['annot']
 
         # copy detections to all_annotations
-        for label in range(generator.num_classes()):
-            all_annotations[i][label] = annotations[annotations[:, 4] == label, :4].copy()
+        for label in range(num_classes):
+            all_annotations[i][label] = annotations[annotations[:, 4] == label, :4].clone().numpy()
 
         print('{}/{}'.format(i + 1, len(generator)), end='\r')
 
@@ -158,6 +158,7 @@ def evaluate(
     iou_threshold=0.5,
     score_threshold=0.05,
     max_detections=100,
+    num_classes=3,
     save_path=None
 ):
     """ Evaluate a given dataset using a given retinanet.
@@ -174,13 +175,13 @@ def evaluate(
 
     # gather all detections and annotations
 
-    all_detections     = _get_detections(generator, retinanet, score_threshold=score_threshold, max_detections=max_detections, save_path=save_path)
-    all_annotations    = _get_annotations(generator)
+    all_detections     = _get_detections(generator, retinanet, score_threshold=score_threshold, max_detections=max_detections, num_classes=num_classes,save_path=save_path)
+    all_annotations    = _get_annotations(generator,num_classes=num_classes)
 
     print(f'detection : {all_detections}')
     average_precisions = {}
 
-    for label in range(generator.num_classes()):
+    for label in range(num_classes):
         false_positives = np.zeros((0,))
         true_positives  = np.zeros((0,))
         scores          = np.zeros((0,))
@@ -238,15 +239,17 @@ def evaluate(
     print(average_precisions)
 
     print('\nmAP:')
-    for label in range(generator.num_classes()):
-        label_name = generator.label_to_name(label)
-        print(label_name)
-        print('{}: {}'.format(label_name, average_precisions[label][0]))
+    for label in range(num_classes):
+        #label_name = generator.label_to_name(label)
+        #print(label_name)
+        print('{}: {}'.format(str(label), average_precisions[label][0]))
         
+        print(precision)
         if num_annotations>0:
             
-            #print("Precision: ",precision[-1])
+            print("Precision: ",precision[-1])
             print("Recall: ",recall[-1])
+            
         else:
             print('Precision: N/A')
             print('Recaall: N/A')
@@ -262,7 +265,7 @@ def evaluate(
             plt.title('Precision Recall curve') 
 
             # function to show the plot
-            plt.savefig(save_path+'/'+label_name+'_precision_recall.jpg')
+            plt.savefig(save_path+'/'+str(label)+'_precision_recall.jpg')
 
 
 

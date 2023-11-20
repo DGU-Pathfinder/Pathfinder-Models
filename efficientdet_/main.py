@@ -96,7 +96,7 @@ def train_fn(num_epochs, train_data_loader, optimizer, model, device, clip=35):
 
 
 def main():
-    train_ann='/home/irteam/junghye-dcloud-dir/pathfinder/data/annotations/train.csv'
+    train_ann='./annotations/train_total.csv'
     
     data_dir='/home/irteam/junghye-dcloud-dir/pathfinder/data/Image'
    

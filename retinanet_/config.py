@@ -1,15 +1,15 @@
+Config=dict(
+    EPOCHS=150,
+    LR=0.0001,
+    DR_RATE=0.35,
+    NUM_CLASSES=3,
+    TRAIN_BS=4,
+    VALID_BS=2,
+    NUM_WORKERS=4,
+    WEIGHT_DECAY=0.0005,
+    CONTRAST='AFTER'
+    
+)
 
-
-#No of epochs
-epochs = 150
-
-train_BS=4
-valid_BS=4
-
-num_workers=4
-
-lr=0.0001
-
-weight_decay=0.0005
 
 
