@@ -33,16 +33,20 @@ class RT_Dataset(Dataset):
 
         if len(bndboxes)>0: 
             boxes = [[box[0] , box[1], box[2], box[3]] for box in bndboxes]
-            labels=[int(label)+1 for label in labels]
+            #labels=[int(label) for label in labels]
             boxes=torch.as_tensor(boxes,dtype=torch.float32)
             area = (boxes[:, 3] - boxes[:, 1]) * (boxes[:, 2] - boxes[:, 0])
-            labels = torch.as_tensor(labels, dtype=torch.int64)
+            labels=[int(label) for label in labels]
+            #labels = torch.as_tensor(labels, dtype=torch.int64)
             
         else:
             boxes = torch.zeros((0,4),dtype=torch.float32)
             labels = torch.zeros(0, dtype=torch.int64)  # 더미 라벨
             area = torch.zeros(0, dtype=torch.float32)  # 더미 면적
             
+            
+        
+        labels = torch.as_tensor(labels, dtype=torch.int64)
         
         #다 crowd x
         iscrowd = torch.zeros((len(boxes),), dtype=torch.int64)
