@@ -66,20 +66,20 @@ def valid_fn(val_data_loader, model, device):
 
         output=model(images)
 
-        #print(f'target : {targets[0]}')
+   
         for out,target in zip(output,targets):
             scores=out['scores'].detach().cpu().numpy()
             boxes=out['boxes'].detach().cpu().numpy()
             labels=out['labels'].detach().cpu().numpy()
 
-           # keep_idx=nms(boxes,scores,iou_threshold=0.1)
+            keep_idx=nms(boxes,scores,iou_threshold=0.1)
 
-            #boxes=boxes[keep_idx]
-            #scores=scores[keep_idx]
-            #labels=labels[keep_idx]
-            # label을 모두 int 형으로 변환
+            boxes=boxes[keep_idx]
+            scores=scores[keep_idx]
+            labels=labels[keep_idx]
+            
 
-            outputs.append({'boxes': boxes, # 2중 리스트일 수도
+            outputs.append({'boxes': boxes, 
                             'scores': scores,
                             'labels': labels})
 
@@ -87,7 +87,7 @@ def valid_fn(val_data_loader, model, device):
             gt_boxes=target['boxes'].cpu().numpy()
             gt_labels=target['labels'].cpu().numpy()
 
-            #ground_truths.append(target['boxes'].cpu().numpy())
+     
             ground_truths.append(list(zip(gt_labels,gt_boxes)))
 
 
@@ -112,14 +112,14 @@ def validate_and_save_best_model(epoch, model, valid_dataloader, device, optimiz
     total_precision=metrics['total']['precision']
     total_f1_score= metrics['total']['f1_score']
 
-    #wandb.log({"epoch": epoch, "recall": metrics['recall']})  # Recall을 W&B에 로그합니다.
+    
     wandb.log({"epoch": epoch, "total_recall": total_recall, "total_precision": total_precision,"total_f1_score":total_f1_score})
 
     categories={2: 'Porosity', 3: 'Slag'}
     class_result = {class_label: metrics_val for class_label, metrics_val in metrics['per_class'].items() if class_label != 0}
     # 각 클래스별 성능 로그
     for class_label,class_metrics in metrics['per_class'].items():
-      #class_label=class_label.item()
+      
       if class_label==2 or class_label==3:
 
         wandb.log({
@@ -139,7 +139,7 @@ def validate_and_save_best_model(epoch, model, valid_dataloader, device, optimiz
             'optimizer_state_dict': optimizer.state_dict(),
             'lr_scheduler_state_dict': lr_scheduler.state_dict()
         }, model_save_path)
-        #wandb.save(model_save_path)  # 모델 파일을 W&B에 저장합니다.
+        
 
     return_outputs=metrics['total']
     return return_outputs,class_result
@@ -158,8 +158,8 @@ if __name__=='__main__':
     result_dir_path=f'/content/drive/MyDrive/result/{Config["MODEL"]}'
     os.makedirs(result_dir_path,exist_ok=True)
 
-    train_dataset=RT_Dataset(train_df,image_dir,transforms=get_ssd_transform(train=True))
-    valid_dataset=RT_Dataset(valid_df,image_dir,transforms=get_ssd_transform(train=False))
+    train_dataset=RT_Dataset(train_df,image_dir,transforms=get_transform(train=True))
+    valid_dataset=RT_Dataset(valid_df,image_dir,transforms=get_transform(train=False))
 
     train_dataloader=torch.utils.data.DataLoader(
         train_dataset,
@@ -185,7 +185,7 @@ if __name__=='__main__':
 
     params = [p for p in model.parameters() if p.requires_grad]
 
-    #optimizer = torch.optim.SGD(params, lr=Config['LR'], momentum=0.9, weight_decay=Config['WEIGHT_DECAY'])
+    
 
     optimizer = torch.optim.Adam(params, lr=Config['LR'])
 

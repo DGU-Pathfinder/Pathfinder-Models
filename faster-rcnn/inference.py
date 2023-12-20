@@ -56,20 +56,20 @@ def valid_fn(val_data_loader, model, device):
 
         output=model(images)
 
-        #print(f'target : {targets[0]}')
+  
         for out,target in zip(output,targets):
             scores=out['scores'].detach().cpu().numpy()
             boxes=out['boxes'].detach().cpu().numpy()
             labels=out['labels'].detach().cpu().numpy()
 
-            #keep_idx=nms(boxes,scores,iou_threshold=0.1)
+            keep_idx=nms(boxes,scores,iou_threshold=0.1)
 
-            #boxes=boxes[keep_idx]
-            #scores=scores[keep_idx]
-            #labels=labels[keep_idx]
+            boxes=boxes[keep_idx]
+            scores=scores[keep_idx]
+            labels=labels[keep_idx]
 
 
-            outputs.append({'boxes': boxes, # 2중 리스트일 수도
+            outputs.append({'boxes': boxes, 
                             'scores': scores,
                             'labels': labels})
 
@@ -79,7 +79,7 @@ def valid_fn(val_data_loader, model, device):
 
             ground_truths.append(list(zip(gt_labels,gt_boxes)))
 
-            #ground_truths.append(target['boxes'].cpu().numpy()) # 이중 리스트일 수도..
+        
 
 
     return outputs,ground_truths
