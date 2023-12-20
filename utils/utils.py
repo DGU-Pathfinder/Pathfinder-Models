@@ -12,6 +12,137 @@ import errno
 import os
 
 
+def calculate_metrics(predictions, ground_truths, iou_threshold=0.2):
+    """
+    Calculate precision, recall, F1-score, and IoU score for overall and each class in a set of predictions and ground truth boxes.
+    """
+    class_stats = {}
+    
+    for pred_boxes, gt_boxes in zip(predictions, ground_truths):
+        matched_gt = {i: False for i in range(len(gt_boxes))}
+        #print(f'pred_boxes:{pred_boxes}, gt_boxes : {gt_boxes}')
+        if len(pred_boxes)==0 and len(gt_boxes)==0:
+          update_class_stats(class_stats,0,'TP')
+          continue
+        if not gt_boxes and pred_boxes:
+          
+          update_class_stats(class_stats,0,'FN')
+          continue
+
+        if not pred_boxes and gt_boxes:
+          
+          update_class_stats(class_stats,0,'FP')
+          continue
+
+        for pred_class, pred_box in pred_boxes:
+            best_iou = 0
+            best_match = None
+            
+            for i, (gt_class, gt_box) in enumerate(gt_boxes):
+               # pred_class=pred_class.item()
+               # gt_class=gt_class.item()
+                if isinstance(pred_class,torch.Tensor):
+                  pred_class=pred_class.item()
+                if isinstance(gt_class,torch.Tensor):
+                  gt_class=gt_class.item()
+
+
+                if pred_class != gt_class: # class 불일치할경우 넘기기
+                    #print(f'틀렸음 pred_class : {pred_class}, gt_class : {gt_class}')
+                    continue
+                #print(f'라벨은 맞음 pred_class, gt_class :{pred_class},{gt_class}')
+                iou = calculate_iou(pred_box, gt_box) # 클래스 일치할 경우 box iou계산
+                #print(f'{pred_class}에 대한 iou :{iou}')
+                if iou > best_iou:
+                    best_iou = iou
+                    best_match = i
+            
+            # 모든 gt를 돌고 난 후 best_iou > iou_threshold이고 best_match일 경우
+            # 1) 해당 gt가 best_match가 없을 경우 
+            if best_iou > iou_threshold and best_match is not None: 
+                if not matched_gt[best_match]:
+                    update_class_stats(class_stats, pred_class, 'TP', best_iou)
+                    matched_gt[best_match] = True
+                else:
+                    update_class_stats(class_stats, pred_class, 'FP') # 이미 임자가 있는데 잘못고름
+            else:
+                update_class_stats(class_stats, pred_class, 'FP') 
+
+        for i, (gt_class, _) in enumerate(gt_boxes):
+            if not matched_gt[i]:
+                update_class_stats(class_stats, gt_class, 'FN') 
+
+    print(f'class_stats : {class_stats}')
+    return calculate_classwise_metrics(class_stats)
+
+def update_class_stats(stats, cls, update_type, iou_score=0):
+    if cls not in stats:
+        stats[cls] = {'TP': 0, 'FP': 0, 'FN': 0, 'total_iou': 0}
+    
+    if update_type == 'TP':
+        stats[cls]['TP'] += 1
+        stats[cls]['total_iou'] += iou_score
+    elif update_type == 'FP':
+        stats[cls]['FP'] += 1
+    elif update_type == 'FN':
+        stats[cls]['FN'] += 1
+
+def calculate_classwise_metrics(stats):
+    class_metrics = {}
+    total_TP, total_FP, total_FN, total_iou = 0, 0, 0, 0
+    for cls, counts in stats.items():
+        precision = counts['TP'] / (counts['TP'] + counts['FP']) if (counts['TP'] + counts['FP']) > 0 else 0
+        recall = counts['TP'] / (counts['TP'] + counts['FN']) if (counts['TP'] + counts['FN']) > 0 else 0
+        f1_score = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
+        average_iou = counts['total_iou'] / counts['TP'] if counts['TP'] > 0 else 0
+
+        class_metrics[cls] = {'precision': precision, 'recall': recall, 'f1_score': f1_score, 'average_iou': average_iou}
+
+        total_TP += counts['TP']
+        total_FP += counts['FP']
+        total_FN += counts['FN']
+        total_iou += counts['total_iou']
+
+    # 전체 성능 계산
+    total_precision = total_TP / (total_TP + total_FP) if (total_TP + total_FP) > 0 else 0
+    total_recall = total_TP / (total_TP + total_FN) if (total_TP + total_FN) > 0 else 0
+    if total_precision+total_recall==0:
+      total_f1_score=0
+    else:
+      total_f1_score = 2 * total_precision * total_recall / (total_precision + total_recall) if (total_precision + total_recall) > 0 else 0
+    total_average_iou = total_iou / total_TP if total_TP > 0 else 0
+
+    return {'total': {'precision': total_precision, 'recall': total_recall, 'f1_score': total_f1_score, 'average_iou': total_average_iou}, 'per_class': class_metrics}
+
+
+
+# IoU 계산 함수
+def calculate_iou(box1, box2):
+    """
+    Calculate the Intersection over Union (IoU) of two bounding boxes.
+    """
+    
+    x1, y1, x2, y2 = box1
+    x1g, y1g, x2g, y2g = box2
+    
+    # Calculate area of intersection
+    xi1 = max(x1, x1g)
+    yi1 = max(y1, y1g)
+    xi2 = min(x2, x2g)
+    yi2 = min(y2, y2g)
+    intersection_area = max(xi2 - xi1, 0) * max(yi2 - yi1, 0)
+    
+    # Calculate area of union
+    box1_area = (x2 - x1) * (y2 - y1)
+    box2_area = (x2g - x1g) * (y2g - y1g)
+    union_area = box1_area + box2_area - intersection_area
+    
+    # Calculate IoU
+    iou = intersection_area / union_area if union_area != 0 else 0
+    
+    return iou
+    
+
 class SmoothedValue(object):
     """Track a series of values and provide access to smoothed values over a
     window or the global series average.
