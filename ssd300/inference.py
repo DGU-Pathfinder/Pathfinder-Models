@@ -63,20 +63,20 @@ def valid_fn(val_data_loader, model, device):
 
         output=model(images)
 
-        #print(f'target : {targets[0]}')
+       
         for out,target in zip(output,targets):
             scores=out['scores'].detach().cpu().numpy()
             boxes=out['boxes'].detach().cpu().numpy()
             labels=out['labels'].detach().cpu().numpy()
 
-            #keep_idx=nms(boxes,scores,iou_threshold=0.1)
+            keep_idx=nms(boxes,scores,iou_threshold=0.1)
 
-            #boxes=boxes[keep_idx]
-            #scores=scores[keep_idx]
-            #labels=labels[keep_idx]
+            boxes=boxes[keep_idx]
+            scores=scores[keep_idx]
+            labels=labels[keep_idx]
 
 
-            outputs.append({'boxes': boxes, # 2중 리스트일 수도
+            outputs.append({'boxes': boxes, 
                             'scores': scores,
                             'labels': labels})
 
@@ -86,7 +86,7 @@ def valid_fn(val_data_loader, model, device):
 
             ground_truths.append(list(zip(gt_labels,gt_boxes)))
 
-            #ground_truths.append(target['boxes'].cpu().numpy()) # 이중 리스트일 수도..
+          
 
 
     return outputs,ground_truths
@@ -149,10 +149,10 @@ if __name__=='__main__':
     )
 
 
-    model=get_object_detection_model(Config['NUM_CLASSES'])
+    model=get_object_detection_model(Config['NUM_CLASSES'],Config['IMG_SIZE'])
 
 
-    model_save_path = "/content/drive/MyDrive/models/fasterrcnn_resnet50_fpnv2_8_4.pth"
+    model_save_path = "/content/drive/MyDrive/models/SSD300_8_4.pth"
     saved_state=torch.load(model_save_path,map_location=device)
 
     model.load_state_dict(saved_state['model_state_dict'])

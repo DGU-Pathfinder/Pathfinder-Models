@@ -1,6 +1,7 @@
 Config=dict(
     EPOCHS=150,
     LR=0.0001,
+    IMG_SIZE=512,
     DR_RATE=0.35,
     NUM_CLASSES=3,
     TRAIN_BS=4,
