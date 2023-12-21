@@ -67,7 +67,7 @@ import gc
 # Effdet config를 통해 모델 불러오기 + ckpt load
 def load_net(checkpoint_path, device):
     config = get_efficientdet_config('tf_efficientdet_d3')
-    config.num_classes = 3
+    config.num_classes = 4
     config.image_size = (512,512)
     
     config.soft_nms = False
@@ -89,14 +89,25 @@ def load_net(checkpoint_path, device):
 def valid_fn(val_data_loader,test_ann, model, device):
     outputs = []
     ground_truths=[]
+    labels=[]
+    
     for images, image_ids in tqdm(val_data_loader):
         # gpu 계산을 위해 image.to(device)       
+        image_dir='./data_test/01. data/Image'
+        record=test_ann.iloc[image_ids]
+        image_name=record['image_name']
+        image_path=os.path.join(image_dir,record['dataset'])
+        test=cv2.imread(os.path.join(image_path,image_name))
+        h, w, c = test.shape
+        
+        a=images
         images = torch.stack(images) # bs, ch, w, h 
         images = images.to(device).float()
-        print(image_ids)
+
         output = model(images)
+        
         for out in output:
-            outputs.append({'boxes': out.detach().cpu().numpy()[:,:4], 
+            outputs.append({'boxes': out.detach().cpu().numpy()[:,:4]*np.array([w,h,w,h])/512, 
                             'scores': out.detach().cpu().numpy()[:,4], 
                             'labels': out.detach().cpu().numpy()[:,-1]})
         for image_id in image_ids:
@@ -105,7 +116,7 @@ def valid_fn(val_data_loader,test_ann, model, device):
             ground_truths.append(boxes)
             
         
-    return outputs,ground_truths
+    return outputs,ground_truths,labels
 
 def collate_fn(batch):
     return tuple(zip(*batch))
@@ -137,59 +148,63 @@ def calculate_iou(box1, box2):
     return iou
 
 # 메트릭 계산 함수
-def calculate_metrics(predictions, ground_truths, iou_threshold=0.0001):
+def calculate_metrics(predictions_boxes,predictions_labels, ground_truths,labels, iou_threshold=0.2):
     """
     Calculate precision, recall, and IoU score for a set of predictions and ground truth boxes.
     """
-    total_true_positives = 0
-    total_false_positives = 0
-    total_false_negatives = 0
-    total_iou_score = 0
-    
-    for pred_boxes, gt_boxes in zip(predictions, ground_truths):
-        matched = [False] * len(gt_boxes)
-        
-        for pred_box in pred_boxes: # 모든 prediction에 대해 
+    result=np.zeros((4,4))
+
+    for pred_boxes, pred_labels, gt_boxes,gt_labels in zip(predictions_boxes, predictions_labels, ground_truths, labels):
+        if len(pred_labels)==0:
+            pred_labels=np.append(pred_labels,3)
+            pred_boxes=np.append(pred_boxes,0)
+
+        for pred_box,pred_label in zip(pred_boxes,pred_labels): # 모든 prediction에 대해 
             best_iou = 0
-            best_match = None
+            for gt_box, gt_label in zip(gt_boxes,gt_labels):
+                if pred_label==3:
+                    x=int(pred_label)
+                else:
+                    iou = calculate_iou(pred_box, gt_box)
+                    if iou > best_iou:
+                        best_iou = iou
+                        x=int(gt_label)
+                        y=int(pred_label)
             
-            for i, gt_box in enumerate(gt_boxes):
-                iou = calculate_iou(pred_box, gt_box)
-                
-                if iou > best_iou:
-                    best_iou = iou
-                    best_match = i
-            
-            if best_iou > iou_threshold:
-                if not matched[best_match]:
-                    total_true_positives += 1
-                    total_iou_score += best_iou
-                    matched[best_match] = True
+            if best_iou > iou_threshold :
+                result[x][y]+=1
+
             else:
-                total_false_positives += 1
-        
-        total_false_negatives += len(gt_boxes) - sum(matched)
-    
-    precision = total_true_positives / (total_true_positives + total_false_positives) if (total_true_positives + total_false_positives) != 0 else 0
-    recall = total_true_positives / (total_true_positives + total_false_negatives) if (total_true_positives + total_false_negatives) != 0 else 0
-    average_iou = total_iou_score / total_true_positives if total_true_positives != 0 else 0
-    
-    return {'precision': precision, 'recall': recall, 'average_iou': average_iou}
+                if len(gt_boxes)==0:
+                    result[3][int(pred_label)]+=1
+                else:
+                    result[x][3]+=1
+
+    print(result)
+    Porosity_precision = result[1][1]/sum(result[:,1])
+    Porosity_recall = result[1][1]/sum(result[1,:])
+    Porosity_F1_score = 2*Porosity_precision*Porosity_recall/(Porosity_precision+Porosity_recall)
+    slag_precision = result[2][2]/sum(result[:,2])
+    slag_recall = result[2][2]/sum(result[2,:])
+    slag_F1_score = 2*slag_precision*slag_recall/(slag_precision+slag_recall)
+
+    return {'Porosity_precision': Porosity_precision, 'Porosity_recall': Porosity_recall, 'Porosity_F1_score': Porosity_F1_score,
+           'slag_precision': slag_precision, 'slag_recall': slag_recall, 'slag_F1_score': slag_F1_score}
 
 
 def main():
-    test_ann_dir='.annotations/test_total.csv'
-    image_dir='/home/irteam/junghye-dcloud-dir/pathfinder/data/Image'
+    test_ann_dir='./data_test/01. data/annotations_v2/test_total.csv'
+    image_dir='./data_test/01. data/Image'
     test_dataset=RT_dataset(image_dir,test_ann_dir,transforms=get_test_transform())
     test_ann=pd.read_csv(test_ann_dir)
     #epoch=50
     checkpoint_path=f'/home/irteam/junghye-dcloud-dir/pathfinder/models/effdet_best_loss_modifiedann.pth'
-    score_threshold=0.01 # score : 모델이 해당 객체를 올바르게 감지했다고 확신하는 정도  
+    score_threshold=0.2 # score : 모델이 해당 객체를 올바르게 감지했다고 확신하는 정도  
     test_data_loader=DataLoader(
         test_dataset,
-        batch_size=2,
+        batch_size=1,
         shuffle=False,
-        num_workers=4,
+        num_workers=0,
         collate_fn=collate_fn
     )
     
@@ -198,7 +213,7 @@ def main():
     
     model=load_net(checkpoint_path,device)
 
-    outputs,ground_truths=valid_fn(test_data_loader,test_ann,model,device)
+    outputs,gt_boxes,gt_labels=valid_fn(test_data_loader,test_ann,model,device)
     
     # calculate precision, recall, average_iou scores 
     # 테스트 데이터에서 상위 점수를 가진 bounding box만 선택
@@ -208,7 +223,7 @@ def main():
         predictions.append(valid_boxes)
 
     # calculate precision, recall, average_iou scores
-    metrics = calculate_metrics(predictions, ground_truths)
+    metrics = calculate_metrics(predictions_boxes,predictions_labels,gt_boxes,gt_labels)
     print(metrics)
     
 if __name__ == "__main__":
