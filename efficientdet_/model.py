@@ -5,7 +5,7 @@ from effdet.efficientdet import HeadNet
 def get_net(checkpoint_path=None):
     
     config = get_efficientdet_config('tf_efficientdet_d3')
-    config.num_classes = 3
+    config.num_classes = 4
     config.image_size = (512,512)
     
     config.soft_nms = False
