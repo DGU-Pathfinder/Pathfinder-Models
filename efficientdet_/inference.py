@@ -198,7 +198,7 @@ def main():
     test_dataset=RT_dataset(image_dir,test_ann_dir,transforms=get_test_transform())
     test_ann=pd.read_csv(test_ann_dir)
     #epoch=50
-    checkpoint_path=f'/home/irteam/junghye-dcloud-dir/pathfinder/models/effdet_best_loss_modifiedann.pth'
+    checkpoint_path=f'./models/effdet_best_loss_modifiedann.pth'
     score_threshold=0.2 # score : 모델이 해당 객체를 올바르게 감지했다고 확신하는 정도  
     test_data_loader=DataLoader(
         test_dataset,
