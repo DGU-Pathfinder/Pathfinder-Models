@@ -1,9 +1,9 @@
 num_epochs = 150
 
 
-batch_size=4
+batch_size=16
 
-num_workers=4
+num_workers=0
 
 lr=0.005
 
